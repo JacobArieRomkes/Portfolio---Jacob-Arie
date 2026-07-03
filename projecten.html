@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Projecten — Jacob Arie</title>
+  <meta name="description" content="Een overzicht van de afgeronde UX-projecten van Jacob Arie Romkes: van gebruikersonderzoek tot high-fidelity prototypes.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Sora:wght@600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/tokens.css">
+  <link rel="stylesheet" href="css/base.css">
+  <link rel="stylesheet" href="css/components.css">
+  <link rel="stylesheet" href="css/pages.css">
+  <link rel="stylesheet" href="css/animations.css">
+  <script src="js/main.js" defer></script>
+  <script src="js/scroll-animations.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Direct naar inhoud</a>
+
+  <header class="site-header">
+    <div class="container">
+      <a class="site-logo" href="index.html">Jacob Arie<span class="logo-dot">.</span></a>
+      <button class="nav-toggle" aria-expanded="false" aria-controls="site-nav" aria-label="Menu">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </button>
+      <nav class="site-nav" id="site-nav" aria-label="Hoofdnavigatie">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="projecten.html" aria-current="page">Projecten</a></li>
+          <li><a href="over-mij.html">Over mij</a></li>
+        </ul>
+        <a class="btn btn-primary nav-cta" href="contact.html">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+
+    <div class="container page-header">
+      <h1 data-reveal>Mijn projecten</h1>
+      <p class="lead" data-reveal>Een overzicht van mijn afgeronde projecten — van eerste onderzoek tot getest prototype.</p>
+    </div>
+
+    <section class="section" aria-label="Projectoverzicht">
+      <div class="container">
+        <div class="projects-grid" data-reveal-stagger>
+          <article class="card card-hover project-card">
+            <img class="project-thumb" src="assets/images/project-1-thumb.svg" alt="" width="1200" height="640">
+            <div class="project-body">
+              <ul class="chip-list" aria-label="Categorieën">
+                <li class="chip">UX Research</li>
+                <li class="chip">UI Design</li>
+              </ul>
+              <h3><a href="projecten/campus-app.html">Campus Navigatie App</a></h3>
+              <p>Een mobiele applicatie waarmee studenten en bezoekers feilloos hun weg vinden over een complexe universiteitscampus, met integratie van real-time roosterinformatie.</p>
+              <span class="project-link">Bekijk project
+                <svg class="icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14"/><path d="m13 6 6 6-6 6"/></svg></span>
+            </div>
+          </article>
+          <article class="card card-hover project-card">
+            <img class="project-thumb" src="assets/images/project-2-thumb.svg" alt="" width="1200" height="640">
+            <div class="project-body">
+              <ul class="chip-list" aria-label="Categorieën">
+                <li class="chip">Webdesign</li>
+                <li class="chip">Sustainability</li>
+              </ul>
+              <h3><a href="projecten/co2-platform.html">CO₂-Reisplatform</a></h3>
+              <p>Concept voor een webplatform dat gebruikers helpt de CO₂-voetafdruk van hun vakanties te berekenen en te verminderen door middel van slimme aanbevelingen.</p>
+              <span class="project-link">Bekijk project
+                <svg class="icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14"/><path d="m13 6 6 6-6 6"/></svg></span>
+            </div>
+          </article>
+          <article class="card card-hover project-card">
+            <img class="project-thumb" src="assets/images/project-3-thumb.svg" alt="" width="1200" height="640">
+            <div class="project-body">
+              <ul class="chip-list" aria-label="Categorieën">
+                <li class="chip">Onderzoek</li>
+                <li class="chip">Service Design</li>
+              </ul>
+              <h3><a href="projecten/zorgportaal.html">Zorgportaal</a></h3>
+              <p>Een herontwerp van het online portaal voor zorgvoorzieningen, gebaseerd op uitgebreid gebruikersonderzoek naar de behoeften van ouderen.</p>
+              <span class="project-link">Bekijk project
+                <svg class="icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14"/><path d="m13 6 6 6-6 6"/></svg></span>
+            </div>
+          </article>
+        </div>
+        <p class="projects-more" data-reveal>Er zullen in de toekomst meer projecten toegevoegd worden — dit portfolio groeit met mijn studie mee. 🌱</p>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-brand">
+        <a class="site-logo" href="index.html">Jacob Arie<span class="logo-dot">.</span></a>
+        <p>&copy; 2026 Jacob Arie Romkes. Alle rechten voorbehouden.</p>
+      </div>
+      <ul class="footer-socials">
+        <!-- TODO(Jacob): echte profiel-URL's invullen -->
+        <li><a href="#" aria-label="LinkedIn"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M20.45 20.45h-3.55v-5.57c0-1.33-.03-3.04-1.85-3.04-1.86 0-2.14 1.45-2.14 2.94v5.67H9.36V9h3.41v1.56h.05c.48-.9 1.64-1.85 3.37-1.85 3.6 0 4.27 2.37 4.27 5.46v6.28zM5.34 7.43a2.06 2.06 0 1 1 0-4.12 2.06 2.06 0 0 1 0 4.12zM7.12 20.45H3.56V9h3.56v11.45z"/></svg></a></li>
+        <li><a href="#" aria-label="Instagram"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="0.5" fill="currentColor"/></svg></a></li>
+        <li><a href="https://github.com/JacobArieRomkes" aria-label="GitHub"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2C6.48 2 2 6.58 2 12.25c0 4.53 2.87 8.37 6.84 9.73.5.09.68-.22.68-.49 0-.24-.01-.89-.01-1.74-2.78.62-3.37-1.37-3.37-1.37-.45-1.18-1.11-1.5-1.11-1.5-.91-.63.07-.62.07-.62 1 .07 1.53 1.06 1.53 1.06.9 1.57 2.36 1.12 2.93.85.09-.66.35-1.12.63-1.37-2.22-.26-4.56-1.14-4.56-5.07 0-1.12.39-2.03 1.03-2.75-.1-.26-.45-1.3.1-2.7 0 0 .84-.28 2.75 1.05a9.36 9.36 0 0 1 5 0c1.91-1.33 2.75-1.05 2.75-1.05.55 1.4.2 2.44.1 2.7.64.72 1.03 1.63 1.03 2.75 0 3.94-2.34 4.8-4.57 5.06.36.32.68.94.68 1.9 0 1.37-.01 2.47-.01 2.81 0 .27.18.59.69.49A10.25 10.25 0 0 0 22 12.25C22 6.58 17.52 2 12 2z"/></svg></a></li>
+      </ul>
+    </div>
+  </footer>
+</body>
+</html>
