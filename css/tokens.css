@@ -1,0 +1,52 @@
+/* ==========================================================================
+   Design tokens — bron: DESIGN.MD (Vivid Minimalist Portfolio)
+   Alle waarden op de site komen uit dit bestand.
+   ========================================================================== */
+
+:root {
+  /* Colors */
+  --color-primary: #22c55e;        /* acties, brand-highlights */
+  --color-primary-dark: #166534;   /* groene tekst op lichte vlakken (AA) */
+  --color-primary-deep: #006e2f;   /* accenten in koppen */
+  --color-mint: #dcfce7;           /* chips, zachte achtergronden */
+  --color-tint: #f0fdf4;           /* sectie-achtergronden */
+  --color-text: #111827;
+  --color-text-muted: #4b5563;
+  --color-bg: #f9fafb;
+  --color-surface: #ffffff;
+  --color-border: #e5e7eb;
+  --color-input-bg: #f3f4f6;
+  --color-error: #ba1a1a;
+  --color-error-bg: #ffdad6;
+
+  /* Typography */
+  --font-heading: 'Sora', sans-serif;
+  --font-body: 'Inter', sans-serif;
+  --text-xl: 3rem;        /* 48px — headline-xl */
+  --text-xl-mobile: 2.25rem; /* 36px */
+  --text-lg: 2rem;        /* 32px — headline-lg */
+  --text-md: 1.5rem;      /* 24px — headline-md */
+  --body-lg: 1.125rem;    /* 18px */
+  --body-md: 1rem;        /* 16px */
+  --label-sm: 0.875rem;   /* 14px */
+
+  /* Spacing (4px grid) */
+  --space-xs: 4px;
+  --space-sm: 8px;
+  --space-md: 16px;
+  --space-lg: 24px;
+  --space-xl: 40px;
+  --section-gap: 80px;
+  --container-max: 1200px;
+
+  /* Radius */
+  --radius-sm: 0.25rem;
+  --radius-md: 0.5rem;
+  --radius-lg: 1rem;
+  --radius-xl: 1.5rem;
+  --radius-full: 9999px;
+
+  /* Shadows */
+  --shadow-1: 0 4px 20px rgba(0, 0, 0, 0.04);
+  --shadow-2: 0 10px 30px rgba(0, 0, 0, 0.08);
+}
