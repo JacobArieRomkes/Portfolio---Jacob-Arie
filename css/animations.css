@@ -1,0 +1,106 @@
+/* ==========================================================================
+   Animations — "Groei"-concept: reveals, groeilijn, marquee
+   Alles binnen prefers-reduced-motion: no-preference; zonder die voorkeur
+   is alle content direct zichtbaar en statisch.
+   ========================================================================== */
+
+@media (prefers-reduced-motion: no-preference) {
+
+  /* Scroll-reveals --------------------------------------------------------- */
+
+  [data-reveal] {
+    opacity: 0;
+    transform: translateY(24px);
+    transition: opacity 600ms ease, transform 600ms ease;
+  }
+
+  [data-reveal].is-visible {
+    opacity: 1;
+    transform: none;
+  }
+
+  /* Gestaffelde kinderen (grids, lijsten) */
+  [data-reveal-stagger] > * {
+    opacity: 0;
+    transform: translateY(24px);
+    transition: opacity 600ms ease, transform 600ms ease;
+  }
+
+  [data-reveal-stagger].is-visible > * {
+    opacity: 1;
+    transform: none;
+  }
+
+  [data-reveal-stagger].is-visible > *:nth-child(2) {
+    transition-delay: 100ms;
+  }
+
+  [data-reveal-stagger].is-visible > *:nth-child(3) {
+    transition-delay: 200ms;
+  }
+
+  [data-reveal-stagger].is-visible > *:nth-child(4) {
+    transition-delay: 300ms;
+  }
+
+  [data-reveal-stagger].is-visible > *:nth-child(5) {
+    transition-delay: 400ms;
+  }
+
+  [data-reveal-stagger].is-visible > *:nth-child(6) {
+    transition-delay: 500ms;
+  }
+
+  /* Skills-marquee (Home) ----------------------------------------------- */
+
+  .skills-track {
+    animation: marquee 30s linear infinite;
+  }
+
+  .skills-strip:hover .skills-track,
+  .skills-strip:focus-within .skills-track {
+    animation-play-state: paused;
+  }
+
+  @keyframes marquee {
+    from {
+      transform: translateX(0);
+    }
+
+    to {
+      transform: translateX(-50%);
+    }
+  }
+
+  /* Groeilijn --------------------------------------------------------------- */
+
+  .growth-line {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 50%;
+    width: 2px;
+    background-color: var(--color-mint);
+    z-index: -1;
+  }
+
+  .growth-line .growth-fill {
+    display: block;
+    width: 100%;
+    height: calc(var(--growth, 0) * 100%);
+    background-color: var(--color-primary);
+    transition: height 150ms linear;
+  }
+}
+
+/* Buiten de media query: reduced-motion krijgt de eindstatus ------------- */
+
+@media (prefers-reduced-motion: reduce) {
+  .process-step .step-marker {
+    transition: none;
+  }
+
+  .growth-line {
+    display: none;
+  }
+}
