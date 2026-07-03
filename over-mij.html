@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Over mij — Jacob Arie</title>
+  <meta name="description" content="Over Jacob Arie Romkes: student UX Design aan Hogeschool Windesheim in Zwolle, met een achtergrond in cognitieve psychologie en een voorliefde voor logische interfaces.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Sora:wght@600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/tokens.css">
+  <link rel="stylesheet" href="css/base.css">
+  <link rel="stylesheet" href="css/components.css">
+  <link rel="stylesheet" href="css/pages.css">
+  <link rel="stylesheet" href="css/animations.css">
+  <script src="js/main.js" defer></script>
+  <script src="js/scroll-animations.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Direct naar inhoud</a>
+
+  <header class="site-header">
+    <div class="container">
+      <a class="site-logo" href="index.html">Jacob Arie<span class="logo-dot">.</span></a>
+      <button class="nav-toggle" aria-expanded="false" aria-controls="site-nav" aria-label="Menu">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </button>
+      <nav class="site-nav" id="site-nav" aria-label="Hoofdnavigatie">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="projecten.html">Projecten</a></li>
+          <li><a href="over-mij.html" aria-current="page">Over mij</a></li>
+        </ul>
+        <a class="btn btn-primary nav-cta" href="contact.html">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+
+    <div class="container page-header">
+      <h1 data-reveal>Over mij</h1>
+      <p class="lead" data-reveal>Ontwerper in opleiding, onderzoeker uit nieuwsgierigheid.</p>
+    </div>
+
+    <!-- Bio -->
+    <section class="section" aria-label="Introductie">
+      <div class="container">
+        <div class="card bio-card" data-reveal>
+          <img src="assets/images/portret-overmij.svg" alt="Portretfoto van Jacob Arie" width="700" height="700">
+          <div>
+            <span class="overline">Jacob Arie Romkes</span>
+            <p>Hoi, ik ben Jacob Arie. Ik studeer UX Design aan de Hogeschool Windesheim in Zwolle. Mijn interesse ligt in het begrijpen van gebruikers en het ontwerpen van digitale producten die logisch en toegankelijk zijn.</p>
+            <p>Naast het ontwerpen van schermen ben ik vooral geïnteresseerd in het waarom achter menselijk gedrag. Mijn achtergrond helpt me om niet alleen mooie, maar ook logische interfaces te bouwen. Als ik niet aan het ontwerpen ben, vind je me waarschijnlijk in de bouldergym of ben ik een nieuwe koffietent aan het ontdekken in de stad.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Vaardigheden -->
+    <section class="section" aria-labelledby="skills-title" style="padding-top: 0;">
+      <div class="container">
+        <h2 id="skills-title" data-reveal>Vaardigheden &amp; expertise</h2>
+        <div class="skills-grid" data-reveal-stagger style="margin-top: var(--space-xl);">
+          <article class="card skill-card">
+            <span class="skill-icon" aria-hidden="true">
+              <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m14.7 6.3 3 3L6 21H3v-3z"/><path d="m17 3 4 4"/></svg>
+            </span>
+            <h3>Tools</h3>
+            <ul class="chip-list">
+              <li class="chip">Figma</li>
+              <li class="chip">Adobe XD</li>
+              <li class="chip">Miro</li>
+              <li class="chip">Webflow</li>
+              <li class="chip">Framer</li>
+            </ul>
+          </article>
+          <article class="card skill-card">
+            <span class="skill-icon" aria-hidden="true">
+              <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.3-4.3"/></svg>
+            </span>
+            <h3>Methodes</h3>
+            <ul class="chip-list">
+              <li class="chip">Design Thinking</li>
+              <li class="chip">User Testing</li>
+              <li class="chip">Wireframing</li>
+              <li class="chip">Prototyping</li>
+              <li class="chip">Persona's</li>
+            </ul>
+          </article>
+          <article class="card skill-card">
+            <span class="skill-icon" aria-hidden="true">
+              <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
+            </span>
+            <h3>Soft skills</h3>
+            <ul class="chip-list">
+              <li class="chip">Empathisch</li>
+              <li class="chip">Kritisch denken</li>
+              <li class="chip">Samenwerken</li>
+              <li class="chip">Presenteren</li>
+              <li class="chip">Flexibel</li>
+            </ul>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Studievoortgang -->
+    <section class="section" aria-labelledby="studie-title" style="padding-top: 0;">
+      <div class="container">
+        <div class="study" data-reveal>
+          <h2 id="studie-title">Studievoortgang</h2>
+          <p class="lead">UX Design, Hogeschool Windesheim Zwolle.</p>
+          <ol class="study-timeline" data-reveal-stagger>
+            <li class="card study-year is-done">
+              <span class="year-status">Afgerond</span>
+              <h3>Jaar 1</h3>
+              <p>Basis van ICT</p>
+            </li>
+            <li class="card study-year is-done">
+              <span class="year-status">Afgerond</span>
+              <h3>Jaar 2</h3>
+              <p>Object-Oriented Software Design &amp; Development • User Interaction</p>
+            </li>
+            <li class="card study-year is-current">
+              <span class="year-status">Bezig</span>
+              <h3>Jaar 3</h3>
+              <p>UX Research &amp; Innovation • Vrije ruimte</p>
+            </li>
+            <li class="card study-year is-future">
+              <span class="year-status">Afstuderen</span>
+              <h3>Jaar 4</h3>
+              <p>Vrije ruimte • Afstudeerproject</p>
+            </li>
+          </ol>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-brand">
+        <a class="site-logo" href="index.html">Jacob Arie<span class="logo-dot">.</span></a>
+        <p>&copy; 2026 Jacob Arie Romkes. Alle rechten voorbehouden.</p>
+      </div>
+      <ul class="footer-socials">
+        <!-- TODO(Jacob): echte profiel-URL's invullen -->
+        <li><a href="#" aria-label="LinkedIn"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M20.45 20.45h-3.55v-5.57c0-1.33-.03-3.04-1.85-3.04-1.86 0-2.14 1.45-2.14 2.94v5.67H9.36V9h3.41v1.56h.05c.48-.9 1.64-1.85 3.37-1.85 3.6 0 4.27 2.37 4.27 5.46v6.28zM5.34 7.43a2.06 2.06 0 1 1 0-4.12 2.06 2.06 0 0 1 0 4.12zM7.12 20.45H3.56V9h3.56v11.45z"/></svg></a></li>
+        <li><a href="#" aria-label="Instagram"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="0.5" fill="currentColor"/></svg></a></li>
+        <li><a href="https://github.com/JacobArieRomkes" aria-label="GitHub"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2C6.48 2 2 6.58 2 12.25c0 4.53 2.87 8.37 6.84 9.73.5.09.68-.22.68-.49 0-.24-.01-.89-.01-1.74-2.78.62-3.37-1.37-3.37-1.37-.45-1.18-1.11-1.5-1.11-1.5-.91-.63.07-.62.07-.62 1 .07 1.53 1.06 1.53 1.06.9 1.57 2.36 1.12 2.93.85.09-.66.35-1.12.63-1.37-2.22-.26-4.56-1.14-4.56-5.07 0-1.12.39-2.03 1.03-2.75-.1-.26-.45-1.3.1-2.7 0 0 .84-.28 2.75 1.05a9.36 9.36 0 0 1 5 0c1.91-1.33 2.75-1.05 2.75-1.05.55 1.4.2 2.44.1 2.7.64.72 1.03 1.63 1.03 2.75 0 3.94-2.34 4.8-4.57 5.06.36.32.68.94.68 1.9 0 1.37-.01 2.47-.01 2.81 0 .27.18.59.69.49A10.25 10.25 0 0 0 22 12.25C22 6.58 17.52 2 12 2z"/></svg></a></li>
+      </ul>
+    </div>
+  </footer>
+</body>
+</html>

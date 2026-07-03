@@ -617,3 +617,147 @@
   text-align: right;
   margin-left: auto;
 }
+
+/* Over mij ------------------------------------------------------------------ */
+
+.bio-card {
+  display: grid;
+  grid-template-columns: minmax(0, 5fr) minmax(0, 7fr);
+  gap: var(--space-xl);
+  align-items: center;
+  padding: var(--space-xl);
+  overflow: hidden;
+}
+
+.bio-card img {
+  width: 100%;
+  aspect-ratio: 1;
+  object-fit: cover;
+  border-radius: var(--radius-lg);
+}
+
+.bio-card .overline {
+  display: block;
+  margin-bottom: var(--space-md);
+}
+
+.bio-card p {
+  color: var(--color-text-muted);
+}
+
+.bio-card p + p {
+  margin-top: var(--space-md);
+}
+
+@media (max-width: 767px) {
+  .bio-card {
+    grid-template-columns: 1fr;
+    padding: var(--space-lg);
+  }
+}
+
+/* Vaardigheden */
+.skills-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 280px), 1fr));
+  gap: var(--space-lg);
+}
+
+.skill-card {
+  padding: var(--space-lg);
+}
+
+.skill-card .skill-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 44px;
+  height: 44px;
+  margin-bottom: var(--space-md);
+  color: var(--color-primary-dark);
+  background-color: var(--color-mint);
+  border-radius: var(--radius-md);
+}
+
+.skill-card h3 {
+  font-size: 1.125rem;
+  margin-bottom: var(--space-md);
+}
+
+/* Studievoortgang */
+.study {
+  background-color: var(--color-tint);
+  border-radius: var(--radius-xl);
+  padding: var(--space-xl) var(--space-lg);
+  text-align: center;
+}
+
+.study .lead {
+  margin-top: var(--space-sm);
+}
+
+.study-timeline {
+  position: relative;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: var(--space-lg);
+  margin-top: var(--space-xl);
+  list-style: none;
+  padding: 0;
+  text-align: left;
+}
+
+.study-year {
+  position: relative;
+  padding: var(--space-lg);
+}
+
+.study-year .year-status {
+  display: inline-block;
+  margin-bottom: var(--space-sm);
+  font-size: 0.75rem;
+  font-weight: 600;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: var(--color-text-muted);
+}
+
+.study-year h3 {
+  font-size: 1rem;
+  margin-bottom: var(--space-sm);
+}
+
+.study-year p {
+  font-size: var(--label-sm);
+  color: var(--color-text-muted);
+}
+
+.study-year.is-done .year-status {
+  color: var(--color-primary-dark);
+}
+
+.study-year.is-current {
+  border: 2px solid var(--color-primary);
+}
+
+.study-year.is-current .year-status {
+  color: var(--color-primary-dark);
+}
+
+.study-year.is-future {
+  background-color: transparent;
+  border: 1.5px dashed var(--color-border);
+  box-shadow: none;
+}
+
+@media (max-width: 1023px) {
+  .study-timeline {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 639px) {
+  .study-timeline {
+    grid-template-columns: 1fr;
+  }
+}
