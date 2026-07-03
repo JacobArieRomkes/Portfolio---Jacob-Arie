@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CO₂-Reisplatform — Jacob Arie</title>
+  <meta name="description" content="Case study: een webplatform dat reizigers inzicht geeft in de CO₂-voetafdruk van hun vakantie en duurzame alternatieven aanbeveelt.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Sora:wght@600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../css/tokens.css">
+  <link rel="stylesheet" href="../css/base.css">
+  <link rel="stylesheet" href="../css/components.css">
+  <link rel="stylesheet" href="../css/pages.css">
+  <link rel="stylesheet" href="../css/animations.css">
+  <script src="../js/main.js" defer></script>
+  <script src="../js/scroll-animations.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Direct naar inhoud</a>
+
+  <header class="site-header">
+    <div class="container">
+      <a class="site-logo" href="../index.html">Jacob Arie<span class="logo-dot">.</span></a>
+      <button class="nav-toggle" aria-expanded="false" aria-controls="site-nav" aria-label="Menu">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </button>
+      <nav class="site-nav" id="site-nav" aria-label="Hoofdnavigatie">
+        <ul>
+          <li><a href="../index.html">Home</a></li>
+          <li><a href="../projecten.html" aria-current="page">Projecten</a></li>
+          <li><a href="../over-mij.html">Over mij</a></li>
+        </ul>
+        <a class="btn btn-primary nav-cta" href="../contact.html">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+
+    <div class="container">
+      <a class="back-link" href="../projecten.html">
+        <svg class="icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14"/><path d="m13 6 6 6-6 6"/></svg>
+        Terug naar projecten</a>
+    </div>
+
+    <!-- Case header -->
+    <section class="case-header">
+      <div class="container">
+        <div data-reveal>
+          <h1>CO₂-Reisplatform</h1>
+          <p class="lead">Een webplatform dat reizigers vooraf inzicht geeft in de CO₂-voetafdruk van hun vakantie en met slimme aanbevelingen duurzamere alternatieven binnen handbereik brengt.</p>
+          <ul class="case-meta" aria-label="Projectgegevens">
+            <li class="chip">6 weken</li>
+            <li class="chip">UX Designer</li>
+            <li class="chip">Figma</li>
+            <li class="chip">Maze</li>
+          </ul>
+        </div>
+        <img class="case-hero-img" data-reveal src="../assets/images/project-2-thumb.svg" alt="Mockup van het CO₂-reisplatform" width="1200" height="640">
+      </div>
+    </section>
+
+    <!-- De opdracht -->
+    <section class="case-section" aria-labelledby="opdracht-title">
+      <div class="container" data-reveal>
+        <h2 id="opdracht-title">De opdracht</h2>
+        <p>Steeds meer reizigers willen bewuster op vakantie, maar de milieu-impact van een reis is abstract en onvergelijkbaar. Wat betekent 800 kilo CO₂ nou eigenlijk? Bestaande calculators zijn technisch, belerend of verstopt achter tientallen invoervelden — waardoor vrijwel niemand ze afmaakt.</p>
+        <p class="case-goal"><strong>Het doel:</strong> ontwerp een platform dat de voetafdruk van een reis begrijpelijk maakt zonder te moraliseren, en dat duurzamere keuzes aantrekkelijk presenteert in plaats van als opoffering.</p>
+      </div>
+    </section>
+
+    <!-- Mijn aanpak -->
+    <section class="case-section" aria-labelledby="aanpak-title">
+      <div class="container">
+        <h2 id="aanpak-title" data-reveal>Mijn aanpak</h2>
+        <div class="case-approach" data-reveal-stagger>
+          <article class="card approach-card">
+            <span class="approach-icon" aria-hidden="true">
+              <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
+            </span>
+            <h3>Enquête &amp; interviews</h3>
+            <p>Een enquête onder 120 reizigers en 8 diepte-interviews maakten duidelijk dat schuldgevoel de grootste afhaker is: mensen willen inzicht, geen preek.</p>
+          </article>
+          <article class="card approach-card">
+            <span class="approach-icon" aria-hidden="true">
+              <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M9 9h6v6H9z"/></svg>
+            </span>
+            <h3>Concurrentie-analyse</h3>
+            <p>Ik analyseerde zes bestaande CO₂-calculators op invoerlast, begrijpelijkheid en toon. Geen enkele vertaalde kilo's CO₂ naar iets tastbaars.</p>
+          </article>
+          <article class="card approach-card">
+            <span class="approach-icon" aria-hidden="true">
+              <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 12h4l3-9 4 18 3-9h4"/></svg>
+            </span>
+            <h3>Usability testing</h3>
+            <p>Met onbegeleide Maze-tests op twee prototypes vergeleek ik een stapsgewijze wizard met één slim formulier — de wizard won overtuigend op voltooiingspercentage.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Keuzes & wireframes -->
+    <section class="case-section" aria-labelledby="keuzes-title">
+      <div class="container">
+        <h2 id="keuzes-title" data-reveal>Gemaakte keuzes &amp; wireframes</h2>
+        <p data-reveal>De grootste ontwerpuitdaging was het balanceren van nauwkeurigheid en invoergemak. Elke extra vraag verbetert de berekening, maar kost gebruikers. De wireframes draaiden daarom om één vraag: wat is het minimum aan invoer voor een geloofwaardig resultaat?</p>
+        <div class="case-choices-layout">
+          <ul class="choice-list" data-reveal-stagger>
+            <li>
+              <h3>Vergelijken in plaats van veroordelen</h3>
+              <p>Het resultaat toont je reis naast twee alternatieven — trein in plaats van vliegtuig, dichterbij in plaats van ver weg — zodat de gebruiker zelf de afweging maakt.</p>
+            </li>
+            <li>
+              <h3>Tastbare eenheden</h3>
+              <p>Kilo's CO₂ worden vertaald naar herkenbare equivalenten, zoals maanden gemiddeld energieverbruik, waardoor de impact eindelijk ergens over gaat.</p>
+            </li>
+          </ul>
+          <img data-reveal src="../assets/images/projecten/co2/wireframes.svg" alt="Wireframes van de reis-wizard en resultaatpagina" width="900" height="700">
+        </div>
+      </div>
+    </section>
+
+    <!-- Eindresultaat -->
+    <section class="case-result" aria-labelledby="resultaat-title">
+      <div class="container" data-reveal>
+        <h2 id="resultaat-title">Het eindresultaat</h2>
+        <p class="lead">Een lichtvoetig platform dat in drie stappen inzicht geeft, met een resultaatpagina die uitnodigt tot ontdekken in plaats van afvinken.</p>
+        <img src="../assets/images/projecten/co2/resultaat.svg" alt="High-fidelity schermen van het eindontwerp" width="1200" height="620">
+      </div>
+    </section>
+
+    <!-- Leerpunten -->
+    <section class="case-section" aria-labelledby="leerpunten-title">
+      <div class="container">
+        <h2 id="leerpunten-title" data-reveal>Belangrijkste leerpunten</h2>
+        <div class="case-learnings" data-reveal-stagger>
+          <article class="card learning-card">
+            <h3>
+              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 20h9"/><path d="M16.5 3.5a2.12 2.12 0 0 1 3 3L7 19l-4 1 1-4Z"/></svg>
+              Toon bepaalt gedrag</h3>
+            <p>Dezelfde data met een andere framing leverde compleet ander gedrag op in tests. Ik heb geleerd dat UX-copy geen afwerking is, maar een ontwerpbeslissing van de eerste orde.</p>
+          </article>
+          <article class="card learning-card">
+            <h3>
+              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M15 4V2"/><path d="M15 16v-2"/><path d="M8 9h2"/><path d="M20 9h2"/><path d="M17.8 11.8 19 13"/><path d="M15 9h0"/><path d="M17.8 6.2 19 5"/><path d="m3 21 9-9"/><path d="M12.2 6.2 11 5"/></svg>
+              Onbegeleid testen schaalt</h3>
+            <p>Onbegeleide tests via Maze gaven me in twee dagen meer kwantitatieve inzichten dan een week begeleide sessies — mits de taken vlijmscherp geformuleerd zijn.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Vorige/volgende -->
+    <nav class="case-nav section" aria-label="Projectnavigatie">
+      <div class="container">
+        <a href="campus-app.html">
+          <span class="case-nav-label">← Vorig project</span>
+          <span class="case-nav-title">Campus Navigatie App</span>
+        </a>
+        <a class="is-next" href="zorgportaal.html">
+          <span class="case-nav-label">Volgend project →</span>
+          <span class="case-nav-title">Zorgportaal</span>
+        </a>
+      </div>
+    </nav>
+
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-brand">
+        <a class="site-logo" href="../index.html">Jacob Arie<span class="logo-dot">.</span></a>
+        <p>&copy; 2026 Jacob Arie Romkes. Alle rechten voorbehouden.</p>
+      </div>
+      <ul class="footer-socials">
+        <!-- TODO(Jacob): echte profiel-URL's invullen -->
+        <li><a href="#" aria-label="LinkedIn"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M20.45 20.45h-3.55v-5.57c0-1.33-.03-3.04-1.85-3.04-1.86 0-2.14 1.45-2.14 2.94v5.67H9.36V9h3.41v1.56h.05c.48-.9 1.64-1.85 3.37-1.85 3.6 0 4.27 2.37 4.27 5.46v6.28zM5.34 7.43a2.06 2.06 0 1 1 0-4.12 2.06 2.06 0 0 1 0 4.12zM7.12 20.45H3.56V9h3.56v11.45z"/></svg></a></li>
+        <li><a href="#" aria-label="Instagram"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="0.5" fill="currentColor"/></svg></a></li>
+        <li><a href="https://github.com/JacobArieRomkes" aria-label="GitHub"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2C6.48 2 2 6.58 2 12.25c0 4.53 2.87 8.37 6.84 9.73.5.09.68-.22.68-.49 0-.24-.01-.89-.01-1.74-2.78.62-3.37-1.37-3.37-1.37-.45-1.18-1.11-1.5-1.11-1.5-.91-.63.07-.62.07-.62 1 .07 1.53 1.06 1.53 1.06.9 1.57 2.36 1.12 2.93.85.09-.66.35-1.12.63-1.37-2.22-.26-4.56-1.14-4.56-5.07 0-1.12.39-2.03 1.03-2.75-.1-.26-.45-1.3.1-2.7 0 0 .84-.28 2.75 1.05a9.36 9.36 0 0 1 5 0c1.91-1.33 2.75-1.05 2.75-1.05.55 1.4.2 2.44.1 2.7.64.72 1.03 1.63 1.03 2.75 0 3.94-2.34 4.8-4.57 5.06.36.32.68.94.68 1.9 0 1.37-.01 2.47-.01 2.81 0 .27.18.59.69.49A10.25 10.25 0 0 0 22 12.25C22 6.58 17.52 2 12 2z"/></svg></a></li>
+      </ul>
+    </div>
+  </footer>
+</body>
+</html>

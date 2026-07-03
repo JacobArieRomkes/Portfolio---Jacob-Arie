@@ -336,3 +336,284 @@
     display: none;
   }
 }
+
+/* Case study (projectdetail) ---------------------------------------------- */
+
+.back-link {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--space-sm);
+  margin-top: var(--space-lg);
+  font-size: var(--label-sm);
+  font-weight: 600;
+  color: var(--color-primary-dark);
+  text-decoration: none;
+}
+
+.back-link .icon {
+  width: 18px;
+  height: 18px;
+  transform: rotate(180deg);
+  transition: transform 150ms ease;
+}
+
+.back-link:hover .icon {
+  transform: rotate(180deg) translateX(4px);
+}
+
+.case-header {
+  padding-block: var(--space-xl) var(--section-gap);
+}
+
+.case-header .container {
+  display: grid;
+  grid-template-columns: minmax(0, 6fr) minmax(0, 6fr);
+  align-items: center;
+  gap: var(--space-xl);
+}
+
+.case-header h1 {
+  margin-top: var(--space-md);
+}
+
+.case-header .lead {
+  margin-top: var(--space-md);
+  max-width: 55ch;
+}
+
+.case-meta {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-sm);
+  margin-top: var(--space-lg);
+  list-style: none;
+  padding: 0;
+}
+
+.case-hero-img {
+  width: 100%;
+  border-radius: var(--radius-xl);
+  box-shadow: var(--shadow-2);
+}
+
+@media (max-width: 1023px) {
+  .case-header .container {
+    grid-template-columns: 1fr;
+  }
+}
+
+.case-section {
+  padding-block: 0 var(--section-gap);
+}
+
+.case-section .container {
+  max-width: 880px;
+}
+
+.case-section h2 {
+  margin-bottom: var(--space-md);
+}
+
+.case-section p + p {
+  margin-top: var(--space-md);
+}
+
+.case-section p {
+  color: var(--color-text-muted);
+}
+
+/* Doel-blok in de opdracht */
+.case-goal {
+  margin-top: var(--space-lg);
+  padding: var(--space-lg);
+  background-color: var(--color-tint);
+  border-left: 3px solid var(--color-primary);
+  border-radius: var(--radius-md);
+  color: var(--color-text);
+}
+
+.case-goal strong {
+  color: var(--color-primary-dark);
+}
+
+/* Aanpak: 3 methode-kaartjes */
+.case-approach {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 240px), 1fr));
+  gap: var(--space-lg);
+  margin-top: var(--space-xl);
+}
+
+.approach-card {
+  padding: var(--space-lg);
+}
+
+.approach-card .approach-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 44px;
+  height: 44px;
+  margin-bottom: var(--space-md);
+  color: var(--color-primary-dark);
+  background-color: var(--color-mint);
+  border-radius: var(--radius-md);
+}
+
+.approach-card h3 {
+  font-size: 1.125rem;
+  margin-bottom: var(--space-sm);
+}
+
+.approach-card p {
+  font-size: var(--label-sm);
+}
+
+/* Keuzes & wireframes */
+.case-choices-layout {
+  display: grid;
+  grid-template-columns: minmax(0, 5fr) minmax(0, 7fr);
+  gap: var(--space-xl);
+  align-items: center;
+  margin-top: var(--space-xl);
+}
+
+.case-choices-layout img {
+  width: 100%;
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-1);
+}
+
+@media (max-width: 767px) {
+  .case-choices-layout {
+    grid-template-columns: 1fr;
+  }
+}
+
+.choice-list {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-lg);
+}
+
+.choice-list li {
+  position: relative;
+  padding-left: 44px;
+}
+
+.choice-list li::before {
+  content: '✓';
+  position: absolute;
+  left: 0;
+  top: 2px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 28px;
+  height: 28px;
+  font-weight: 700;
+  color: var(--color-primary-dark);
+  background-color: var(--color-mint);
+  border-radius: var(--radius-full);
+}
+
+.choice-list h3 {
+  font-size: 1.0625rem;
+  margin-bottom: var(--space-xs);
+}
+
+.choice-list p {
+  font-size: var(--label-sm);
+}
+
+/* Eindresultaat */
+.case-result {
+  background-color: var(--color-tint);
+  padding-block: var(--section-gap);
+  text-align: center;
+}
+
+.case-result .container {
+  max-width: 880px;
+}
+
+.case-result .lead {
+  margin-inline: auto;
+  margin-top: var(--space-sm);
+  max-width: 55ch;
+}
+
+.case-result img {
+  width: 100%;
+  margin-top: var(--space-xl);
+  border-radius: var(--radius-xl);
+  box-shadow: var(--shadow-2);
+}
+
+/* Leerpunten */
+.case-learnings {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 300px), 1fr));
+  gap: var(--space-lg);
+  margin-top: var(--space-xl);
+}
+
+.learning-card {
+  padding: var(--space-lg);
+}
+
+.learning-card h3 {
+  display: flex;
+  align-items: center;
+  gap: var(--space-sm);
+  font-size: 1.125rem;
+  margin-bottom: var(--space-sm);
+  color: var(--color-primary-dark);
+}
+
+.learning-card p {
+  font-size: var(--label-sm);
+}
+
+/* Vorige/volgende project */
+.case-nav {
+  border-top: 1px solid var(--color-border);
+  padding-top: var(--space-xl);
+}
+
+.case-nav .container {
+  display: flex;
+  justify-content: space-between;
+  gap: var(--space-lg);
+}
+
+.case-nav a {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-xs);
+  text-decoration: none;
+  color: var(--color-text);
+  max-width: 45%;
+}
+
+.case-nav a:hover .case-nav-title {
+  color: var(--color-primary-dark);
+}
+
+.case-nav .case-nav-label {
+  font-size: var(--label-sm);
+  color: var(--color-text-muted);
+}
+
+.case-nav .case-nav-title {
+  font-family: var(--font-heading);
+  font-weight: 600;
+  transition: color 150ms ease;
+}
+
+.case-nav .is-next {
+  text-align: right;
+  margin-left: auto;
+}

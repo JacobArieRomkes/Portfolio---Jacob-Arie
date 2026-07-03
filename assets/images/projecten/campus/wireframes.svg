@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 700" role="img" aria-label="Wireframes Campus Navigatie App">
+  <rect width="900" height="700" fill="#dcfce7"/>
+  <g transform="translate(90 110) rotate(-4)">
+    <rect width="220" height="440" rx="18" fill="#ffffff"/>
+    <rect x="20" y="24" width="180" height="16" rx="5" fill="#e5e7eb"/>
+    <rect x="20" y="56" width="180" height="180" rx="8" fill="#f0fdf4"/>
+    <rect x="20" y="252" width="130" height="12" rx="4" fill="#e5e7eb"/>
+    <rect x="20" y="276" width="180" height="12" rx="4" fill="#e5e7eb"/>
+    <rect x="20" y="380" width="180" height="36" rx="8" fill="#86efac"/>
+  </g>
+  <g transform="translate(370 80) rotate(2)">
+    <rect width="220" height="440" rx="18" fill="#ffffff"/>
+    <rect x="20" y="24" width="120" height="16" rx="5" fill="#e5e7eb"/>
+    <rect x="20" y="56" width="180" height="240" rx="8" fill="#f0fdf4"/>
+    <path d="M50 240l40-56 34 40 30-66 56 82z" fill="#86efac"/>
+    <rect x="20" y="316" width="180" height="12" rx="4" fill="#e5e7eb"/>
+    <rect x="20" y="380" width="180" height="36" rx="8" fill="#86efac"/>
+  </g>
+  <g transform="translate(630 130) rotate(6)">
+    <rect width="220" height="440" rx="18" fill="#ffffff"/>
+    <rect x="20" y="24" width="150" height="16" rx="5" fill="#e5e7eb"/>
+    <rect x="20" y="56" width="84" height="84" rx="8" fill="#f0fdf4"/>
+    <rect x="116" y="56" width="84" height="84" rx="8" fill="#f0fdf4"/>
+    <rect x="20" y="152" width="84" height="84" rx="8" fill="#f0fdf4"/>
+    <rect x="116" y="152" width="84" height="84" rx="8" fill="#f0fdf4"/>
+    <rect x="20" y="380" width="180" height="36" rx="8" fill="#86efac"/>
+  </g>
+  <text x="450" y="660" text-anchor="middle" font-family="sans-serif" font-size="26" fill="#166534">Wireframes — 900×700</text>
+</svg>

@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Campus Navigatie App — Jacob Arie</title>
+  <meta name="description" content="Case study: een mobiele app waarmee studenten en bezoekers feilloos hun weg vinden over een complexe universiteitscampus.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Sora:wght@600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../css/tokens.css">
+  <link rel="stylesheet" href="../css/base.css">
+  <link rel="stylesheet" href="../css/components.css">
+  <link rel="stylesheet" href="../css/pages.css">
+  <link rel="stylesheet" href="../css/animations.css">
+  <script src="../js/main.js" defer></script>
+  <script src="../js/scroll-animations.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Direct naar inhoud</a>
+
+  <header class="site-header">
+    <div class="container">
+      <a class="site-logo" href="../index.html">Jacob Arie<span class="logo-dot">.</span></a>
+      <button class="nav-toggle" aria-expanded="false" aria-controls="site-nav" aria-label="Menu">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </button>
+      <nav class="site-nav" id="site-nav" aria-label="Hoofdnavigatie">
+        <ul>
+          <li><a href="../index.html">Home</a></li>
+          <li><a href="../projecten.html" aria-current="page">Projecten</a></li>
+          <li><a href="../over-mij.html">Over mij</a></li>
+        </ul>
+        <a class="btn btn-primary nav-cta" href="../contact.html">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+
+    <div class="container">
+      <a class="back-link" href="../projecten.html">
+        <svg class="icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14"/><path d="m13 6 6 6-6 6"/></svg>
+        Terug naar projecten</a>
+    </div>
+
+    <!-- Case header -->
+    <section class="case-header">
+      <div class="container">
+        <div data-reveal>
+          <h1>Campus Navigatie App</h1>
+          <p class="lead">Een mobiele app waarmee studenten en bezoekers feilloos hun weg vinden over een complexe universiteitscampus — met real-time roosterintegratie en stapsgewijze routering.</p>
+          <ul class="case-meta" aria-label="Projectgegevens">
+            <li class="chip">4 weken</li>
+            <li class="chip">UX/UI Designer</li>
+            <li class="chip">Figma</li>
+            <li class="chip">Miro</li>
+          </ul>
+        </div>
+        <img class="case-hero-img" data-reveal src="../assets/images/project-1-thumb.svg" alt="Mockup van de Campus Navigatie App" width="1200" height="640">
+      </div>
+    </section>
+
+    <!-- De opdracht -->
+    <section class="case-section" aria-labelledby="opdracht-title">
+      <div class="container" data-reveal>
+        <h2 id="opdracht-title">De opdracht</h2>
+        <p>De lokale universiteitscampus is een doolhof van verweven gebouwen, genummerde blokken zonder logische volgorde en verborgen collegezalen. Elk semester missen tientallen eerstejaarsstudenten en gastsprekers de start van hun lezing omdat ze simpelweg de weg niet kunnen vinden.</p>
+        <p class="case-goal"><strong>Het doel:</strong> ontwerp een digitale oplossing die stress rondom campusnavigatie minimaliseert, naadloos integreert met persoonlijke roosters en duidelijke, stapsgewijze binnen- en buitenroutering biedt.</p>
+      </div>
+    </section>
+
+    <!-- Mijn aanpak -->
+    <section class="case-section" aria-labelledby="aanpak-title">
+      <div class="container">
+        <h2 id="aanpak-title" data-reveal>Mijn aanpak</h2>
+        <div class="case-approach" data-reveal-stagger>
+          <article class="card approach-card">
+            <span class="approach-icon" aria-hidden="true">
+              <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
+            </span>
+            <h3>Interviews</h3>
+            <p>Ik sprak met 15 eerstejaars, 5 docenten en 3 gastsprekers om hun pijnpunten in kaart te brengen. Het grootste probleem bleek de overgang van buiten- naar binnennavigatie.</p>
+          </article>
+          <article class="card approach-card">
+            <span class="approach-icon" aria-hidden="true">
+              <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M22 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+            </span>
+            <h3>Persona's</h3>
+            <p>Gebaseerd op de research creëerde ik "Nieuwe Student Sarah" en "Bezoeker Bart", elk met eigen doelen en frustraties — van roosterkoppeling tot eenmalig bezoek.</p>
+          </article>
+          <article class="card approach-card">
+            <span class="approach-icon" aria-hidden="true">
+              <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 12h4l3-9 4 18 3-9h4"/></svg>
+            </span>
+            <h3>Journey mapping</h3>
+            <p>Het in kaart brengen van de emotionele curve van aankomst op het station tot de collegezaal toonde precies waar in de reis duidelijke begeleiding cruciaal was.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Keuzes & wireframes -->
+    <section class="case-section" aria-labelledby="keuzes-title">
+      <div class="container">
+        <h2 id="keuzes-title" data-reveal>Gemaakte keuzes &amp; wireframes</h2>
+        <p data-reveal>In de low-fidelity fase lag de focus op de informatiestructuur (IA) en de navigatieflow. Ik heb bewust gekozen voor een kaart-gecentreerde interface met de looptijd naar het volgende college permanent in beeld.</p>
+        <div class="case-choices-layout">
+          <ul class="choice-list" data-reveal-stagger>
+            <li>
+              <h3>Kaart als basis</h3>
+              <p>De plattegrond neemt ruim 60% van het scherm in beslag, zodat gebruikers zich continu kunnen oriënteren zonder tussen schermen te hoeven wisselen.</p>
+            </li>
+            <li>
+              <h3>Rooster-eerst navigeren</h3>
+              <p>In plaats van zelf een lokaal op te zoeken, start de route direct vanuit het persoonlijke rooster — één tik van les naar looproute.</p>
+            </li>
+          </ul>
+          <img data-reveal src="../assets/images/projecten/campus/wireframes.svg" alt="Drie wireframe-schermen van de app naast elkaar" width="900" height="700">
+        </div>
+      </div>
+    </section>
+
+    <!-- Eindresultaat -->
+    <section class="case-result" aria-labelledby="resultaat-title">
+      <div class="container" data-reveal>
+        <h2 id="resultaat-title">Het eindresultaat</h2>
+        <p class="lead">Een verfijnde, moderne interface die vertrouwen uitstraalt en de route de held van de applicatie maakt — van station tot collegezaal zonder één verkeerde afslag.</p>
+        <img src="../assets/images/projecten/campus/resultaat.svg" alt="Twee high-fidelity schermen van het eindontwerp" width="1200" height="620">
+      </div>
+    </section>
+
+    <!-- Leerpunten -->
+    <section class="case-section" aria-labelledby="leerpunten-title">
+      <div class="container">
+        <h2 id="leerpunten-title" data-reveal>Belangrijkste leerpunten</h2>
+        <div class="case-learnings" data-reveal-stagger>
+          <article class="card learning-card">
+            <h3>
+              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 20h9"/><path d="M16.5 3.5a2.12 2.12 0 0 1 3 3L7 19l-4 1 1-4Z"/></svg>
+              Content is koning</h3>
+            <p>Hoe mooi de UI ook is, bij een navigatie-app draait alles om de kwaliteit van de kaartdata. Ik heb geleerd om ontwerpen vroeg te toetsen met echte content in plaats van lorem ipsum.</p>
+          </article>
+          <article class="card learning-card">
+            <h3>
+              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M15 4V2"/><path d="M15 16v-2"/><path d="M8 9h2"/><path d="M20 9h2"/><path d="M17.8 11.8 19 13"/><path d="M15 9h0"/><path d="M17.8 6.2 19 5"/><path d="m3 21 9-9"/><path d="M12.2 6.2 11 5"/></svg>
+              Micro-interacties</h3>
+            <p>Het toevoegen van subtiele haptische feedback en vloeiende transities tijdens het navigeren gaf testgebruikers aanzienlijk meer vertrouwen dat de app "live" met ze meedacht.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Vorige/volgende -->
+    <nav class="case-nav section" aria-label="Projectnavigatie">
+      <div class="container">
+        <a href="zorgportaal.html">
+          <span class="case-nav-label">← Vorig project</span>
+          <span class="case-nav-title">Zorgportaal</span>
+        </a>
+        <a class="is-next" href="co2-platform.html">
+          <span class="case-nav-label">Volgend project →</span>
+          <span class="case-nav-title">CO₂-Reisplatform</span>
+        </a>
+      </div>
+    </nav>
+
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-brand">
+        <a class="site-logo" href="../index.html">Jacob Arie<span class="logo-dot">.</span></a>
+        <p>&copy; 2026 Jacob Arie Romkes. Alle rechten voorbehouden.</p>
+      </div>
+      <ul class="footer-socials">
+        <!-- TODO(Jacob): echte profiel-URL's invullen -->
+        <li><a href="#" aria-label="LinkedIn"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M20.45 20.45h-3.55v-5.57c0-1.33-.03-3.04-1.85-3.04-1.86 0-2.14 1.45-2.14 2.94v5.67H9.36V9h3.41v1.56h.05c.48-.9 1.64-1.85 3.37-1.85 3.6 0 4.27 2.37 4.27 5.46v6.28zM5.34 7.43a2.06 2.06 0 1 1 0-4.12 2.06 2.06 0 0 1 0 4.12zM7.12 20.45H3.56V9h3.56v11.45z"/></svg></a></li>
+        <li><a href="#" aria-label="Instagram"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="0.5" fill="currentColor"/></svg></a></li>
+        <li><a href="https://github.com/JacobArieRomkes" aria-label="GitHub"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2C6.48 2 2 6.58 2 12.25c0 4.53 2.87 8.37 6.84 9.73.5.09.68-.22.68-.49 0-.24-.01-.89-.01-1.74-2.78.62-3.37-1.37-3.37-1.37-.45-1.18-1.11-1.5-1.11-1.5-.91-.63.07-.62.07-.62 1 .07 1.53 1.06 1.53 1.06.9 1.57 2.36 1.12 2.93.85.09-.66.35-1.12.63-1.37-2.22-.26-4.56-1.14-4.56-5.07 0-1.12.39-2.03 1.03-2.75-.1-.26-.45-1.3.1-2.7 0 0 .84-.28 2.75 1.05a9.36 9.36 0 0 1 5 0c1.91-1.33 2.75-1.05 2.75-1.05.55 1.4.2 2.44.1 2.7.64.72 1.03 1.63 1.03 2.75 0 3.94-2.34 4.8-4.57 5.06.36.32.68.94.68 1.9 0 1.37-.01 2.47-.01 2.81 0 .27.18.59.69.49A10.25 10.25 0 0 0 22 12.25C22 6.58 17.52 2 12 2z"/></svg></a></li>
+      </ul>
+    </div>
+  </footer>
+</body>
+</html>
