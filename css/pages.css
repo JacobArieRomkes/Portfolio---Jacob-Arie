@@ -1,0 +1,338 @@
+/* ==========================================================================
+   Pages — sectie-specifieke styling per pagina
+   ========================================================================== */
+
+/* Hero (Home) --------------------------------------------------------------- */
+
+.hero {
+  position: relative;
+  overflow: hidden;
+  padding-block: var(--section-gap);
+}
+
+.hero .container {
+  display: grid;
+  grid-template-columns: minmax(0, 7fr) minmax(0, 5fr);
+  align-items: center;
+  gap: var(--space-xl);
+}
+
+.hero-accent {
+  color: var(--color-primary-deep);
+}
+
+.hero-intro {
+  margin-top: var(--space-lg);
+  max-width: 52ch;
+  font-size: var(--body-lg);
+  color: var(--color-text-muted);
+}
+
+.hero-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-md);
+  margin-top: var(--space-xl);
+}
+
+.hero-portrait {
+  position: relative;
+  justify-self: center;
+  width: min(360px, 80%);
+}
+
+.hero-portrait img {
+  position: relative;
+  z-index: 1;
+  aspect-ratio: 1;
+  width: 100%;
+  object-fit: cover;
+  border-radius: var(--radius-full);
+  box-shadow: var(--shadow-2);
+}
+
+/* Decoratieve ring achter het portret */
+.hero-portrait::before {
+  content: '';
+  position: absolute;
+  inset: -14px;
+  border: 2px dashed var(--color-primary);
+  border-radius: var(--radius-full);
+  opacity: 0.5;
+}
+
+.hero-portrait::after {
+  content: '';
+  position: absolute;
+  right: -28px;
+  bottom: 8px;
+  width: 88px;
+  height: 88px;
+  background-color: var(--color-mint);
+  border-radius: var(--radius-full);
+  z-index: 0;
+}
+
+@media (max-width: 1023px) {
+  .hero .container {
+    grid-template-columns: 1fr;
+    text-align: center;
+  }
+
+  .hero-intro {
+    margin-inline: auto;
+  }
+
+  .hero-actions {
+    justify-content: center;
+  }
+
+  .hero-portrait {
+    grid-row: 1;
+    width: min(280px, 70%);
+    margin-bottom: var(--space-lg);
+  }
+}
+
+/* Project cards (Home + Projecten) --------------------------------------- */
+
+.section-head {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  gap: var(--space-lg);
+  margin-bottom: var(--space-xl);
+}
+
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 340px), 1fr));
+  gap: var(--space-lg);
+}
+
+.project-card {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+.project-card .project-thumb {
+  aspect-ratio: 15 / 8;
+  width: 100%;
+  object-fit: cover;
+}
+
+.project-card .project-body {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: var(--space-md);
+  flex-grow: 1;
+  padding: var(--space-lg);
+}
+
+.project-card h3 a {
+  color: inherit;
+  text-decoration: none;
+}
+
+/* Hele kaart klikbaar via pseudo-element op de titel-link */
+.project-card h3 a::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+}
+
+.project-card p {
+  color: var(--color-text-muted);
+}
+
+.project-card .project-link {
+  position: relative;
+  z-index: 1;
+  margin-top: auto;
+  display: inline-flex;
+  align-items: center;
+  gap: var(--space-sm);
+  font-size: var(--label-sm);
+  font-weight: 600;
+  color: var(--color-primary-dark);
+}
+
+.project-card .project-link .icon {
+  width: 18px;
+  height: 18px;
+  transition: transform 150ms ease;
+}
+
+.project-card:hover .project-link .icon {
+  transform: translateX(4px);
+}
+
+.projects-more {
+  margin-top: var(--space-xl);
+  text-align: center;
+  color: var(--color-text-muted);
+  font-size: var(--label-sm);
+}
+
+/* Skills-strip (Home) --------------------------------------------------- */
+
+.skills-strip {
+  padding-block: var(--space-lg);
+  border-block: 1px solid var(--color-border);
+  background-color: var(--color-surface);
+  overflow: hidden;
+}
+
+.skills-track {
+  display: flex;
+  gap: var(--space-md);
+  width: max-content;
+}
+
+.skills-track .chip {
+  font-size: var(--label-sm);
+  padding: var(--space-sm) var(--space-md);
+}
+
+/* About-teaser (Home) ----------------------------------------------------- */
+
+.about-teaser {
+  background-color: var(--color-tint);
+}
+
+.about-teaser .container {
+  display: grid;
+  grid-template-columns: minmax(0, 4fr) minmax(0, 8fr);
+  align-items: center;
+  gap: var(--space-xl);
+}
+
+.teaser-portrait {
+  justify-self: center;
+  width: min(260px, 70%);
+}
+
+.teaser-portrait img {
+  aspect-ratio: 1;
+  width: 100%;
+  object-fit: cover;
+  border-radius: var(--radius-full);
+  border: 6px solid var(--color-surface);
+  box-shadow: var(--shadow-1);
+}
+
+.about-teaser h2 {
+  margin-bottom: var(--space-md);
+}
+
+.about-teaser p {
+  max-width: 60ch;
+  color: var(--color-text-muted);
+}
+
+.about-teaser .btn {
+  margin-top: var(--space-lg);
+}
+
+@media (max-width: 767px) {
+  .about-teaser .container {
+    grid-template-columns: 1fr;
+    text-align: center;
+  }
+
+  .about-teaser p {
+    margin-inline: auto;
+  }
+}
+
+/* Proces (Home) ---------------------------------------------------------- */
+
+.process {
+  text-align: center;
+}
+
+.process .overline {
+  display: block;
+  margin-bottom: var(--space-sm);
+}
+
+.process-steps {
+  position: relative;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: var(--space-xl);
+  margin-top: var(--space-xl);
+  list-style: none;
+  padding: 0;
+}
+
+.process-step {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: var(--space-md);
+}
+
+.step-marker {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 56px;
+  height: 56px;
+  font-family: var(--font-heading);
+  font-weight: 700;
+  color: var(--color-primary-dark);
+  background-color: var(--color-surface);
+  border: 2px solid var(--color-primary);
+  border-radius: var(--radius-full);
+  box-shadow: var(--shadow-1);
+  transition: background-color 300ms ease, color 300ms ease;
+}
+
+.process-step.is-active .step-marker {
+  background-color: var(--color-primary);
+  color: #ffffff;
+}
+
+/* Verbindingslijn tussen de stappen */
+.process-connector {
+  position: absolute;
+  top: 28px;
+  left: calc(16.67% + 40px);
+  right: calc(16.67% + 40px);
+  height: 2px;
+  background-color: var(--color-mint);
+}
+
+.process-connector .connector-fill {
+  display: block;
+  height: 100%;
+  width: 0;
+  background-color: var(--color-primary);
+  transition: width 1200ms ease;
+}
+
+.process-step h3 {
+  font-size: 1.125rem;
+}
+
+.process-step p {
+  max-width: 32ch;
+  font-size: var(--label-sm);
+  color: var(--color-text-muted);
+}
+
+@media (max-width: 767px) {
+  .process-steps {
+    grid-template-columns: 1fr;
+    gap: var(--space-xl);
+  }
+
+  .process-connector {
+    display: none;
+  }
+}
