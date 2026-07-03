@@ -243,11 +243,11 @@
 
 .btn-primary {
   background-color: var(--color-primary);
-  color: #ffffff;
+  color: var(--color-on-primary);
 }
 
 .btn-primary:hover {
-  background-color: #16a34a;
+  background-color: var(--color-primary-hover);
   box-shadow: var(--shadow-2);
 }
 

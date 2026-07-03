@@ -295,7 +295,7 @@
 
 .process-step.is-active .step-marker {
   background-color: var(--color-primary);
-  color: #ffffff;
+  color: var(--color-on-primary);
 }
 
 /* Verbindingslijn tussen de stappen */

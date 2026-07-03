@@ -6,6 +6,8 @@
 :root {
   /* Colors */
   --color-primary: #22c55e;        /* acties, brand-highlights */
+  --color-on-primary: #004b1e;     /* tekst op primary (AA-contrast op fel groen) */
+  --color-primary-hover: #4ade80;  /* hover-variant die contrast behoudt */
   --color-primary-dark: #166534;   /* groene tekst op lichte vlakken (AA) */
   --color-primary-deep: #006e2f;   /* accenten in koppen */
   --color-mint: #dcfce7;           /* chips, zachte achtergronden */
