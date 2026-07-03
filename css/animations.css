@@ -72,25 +72,6 @@
     }
   }
 
-  /* Groeilijn --------------------------------------------------------------- */
-
-  .growth-line {
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    left: 50%;
-    width: 2px;
-    background-color: var(--color-mint);
-    z-index: -1;
-  }
-
-  .growth-line .growth-fill {
-    display: block;
-    width: 100%;
-    height: calc(var(--growth, 0) * 100%);
-    background-color: var(--color-primary);
-    transition: height 150ms linear;
-  }
 }
 
 /* Buiten de media query: reduced-motion krijgt de eindstatus ------------- */
@@ -98,9 +79,5 @@
 @media (prefers-reduced-motion: reduce) {
   .process-step .step-marker {
     transition: none;
-  }
-
-  .growth-line {
-    display: none;
   }
 }

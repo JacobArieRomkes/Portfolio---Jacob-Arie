@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Contact — Jacob Arie</title>
   <meta name="description" content="Neem contact op met Jacob Arie Romkes voor vragen, samenwerkingen of stagemogelijkheden.">
+  <link rel="icon" type="image/svg+xml" href="assets/icons/favicon.svg">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Sora:wght@600;700&display=swap" rel="stylesheet">
@@ -55,24 +56,27 @@
           <!-- TODO(Jacob): maak een gratis account op formspree.io, maak een formulier
                aan en vervang JOUW_FORM_ID hieronder door jouw echte form-ID. -->
           <form id="contact-form" action="https://formspree.io/f/JOUW_FORM_ID" method="POST" novalidate>
+            <!-- Honeypot tegen spambots: mensen zien/vullen dit veld nooit,
+                 bots wel — Formspree negeert inzendingen met een gevuld _gotcha. -->
+            <input type="text" name="_gotcha" tabindex="-1" autocomplete="off" aria-hidden="true" style="position:absolute; left:-9999px; width:1px; height:1px;">
             <div class="field">
               <label for="naam">Naam *</label>
-              <input type="text" id="naam" name="naam" required autocomplete="name" placeholder="Jan de Vries" aria-describedby="naam-error">
+              <input type="text" id="naam" name="naam" required maxlength="100" autocomplete="name" placeholder="Jan de Vries" aria-describedby="naam-error">
               <span class="field-error" id="naam-error"></span>
             </div>
             <div class="field">
               <label for="email">E-mailadres *</label>
-              <input type="email" id="email" name="email" required autocomplete="email" placeholder="jandevries@email.nl" aria-describedby="email-error">
+              <input type="email" id="email" name="email" required maxlength="254" autocomplete="email" placeholder="jandevries@email.nl" aria-describedby="email-error">
               <span class="field-error" id="email-error"></span>
             </div>
             <div class="field">
               <label for="onderwerp">Onderwerp</label>
-              <input type="text" id="onderwerp" name="onderwerp" placeholder="Samenwerking, vraag, stage…" aria-describedby="onderwerp-error">
+              <input type="text" id="onderwerp" name="onderwerp" maxlength="150" placeholder="Samenwerking, vraag, stage…" aria-describedby="onderwerp-error">
               <span class="field-error" id="onderwerp-error"></span>
             </div>
             <div class="field">
               <label for="bericht">Bericht *</label>
-              <textarea id="bericht" name="bericht" required placeholder="Schrijf hier je bericht" aria-describedby="bericht-error"></textarea>
+              <textarea id="bericht" name="bericht" required maxlength="5000" placeholder="Schrijf hier je bericht" aria-describedby="bericht-error"></textarea>
               <span class="field-error" id="bericht-error"></span>
             </div>
             <button class="btn btn-primary" type="submit">Verstuur bericht

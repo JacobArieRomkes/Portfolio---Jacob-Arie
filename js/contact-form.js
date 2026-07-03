@@ -34,7 +34,7 @@ function initContactForm() {
   }
 
   // Foutpreventie: valideer zodra een veld verlaten wordt
-  form.querySelectorAll('input, textarea').forEach((field) => {
+  form.querySelectorAll('.field input, .field textarea').forEach((field) => {
     field.addEventListener('blur', () => validateField(field));
     field.addEventListener('input', () => {
       if (field.closest('.field').classList.contains('has-error')) {
@@ -46,7 +46,7 @@ function initContactForm() {
   form.addEventListener('submit', async (e) => {
     e.preventDefault();
 
-    const fields = Array.from(form.querySelectorAll('input, textarea'));
+    const fields = Array.from(form.querySelectorAll('.field input, .field textarea'));
     const allValid = fields.map((f) => validateField(f)).every(Boolean);
 
     if (!allValid) {

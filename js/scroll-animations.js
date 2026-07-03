@@ -25,64 +25,32 @@ function initReveals() {
   targets.forEach((el) => observer.observe(el));
 }
 
-/* Procesconnector vult zich en stappen worden één voor één actief */
+/* Procesconnector vult zich en stappen worden één voor één actief.
+   Bewust een scroll-check i.p.v. IntersectionObserver: die bleek in
+   achtergrond-tabs callbacks te kunnen missen. */
 function initProcess() {
   const process = document.querySelector('[data-process]');
   if (!process) return;
 
   const fill = process.querySelector('.connector-fill');
   const steps = process.querySelectorAll('.process-step');
+  let done = false;
 
-  const observer = new IntersectionObserver(
-    (entries) => {
-      entries.forEach((entry) => {
-        if (!entry.isIntersecting) return;
-        if (fill) fill.style.width = '100%';
-        steps.forEach((step, i) => {
-          setTimeout(() => step.classList.add('is-active'), 300 + i * 450);
-        });
-        observer.disconnect();
-      });
-    },
-    { threshold: 0.4 }
-  );
+  function activate() {
+    if (done) return;
+    const rect = process.getBoundingClientRect();
+    if (rect.top > window.innerHeight * 0.7 || rect.bottom < 0) return;
 
-  observer.observe(process);
-}
-
-/* Groeilijn: vult mee met de scroll-voortgang binnen z'n sectie */
-function initGrowthLines() {
-  const lines = document.querySelectorAll('.growth-line');
-  if (!lines.length) return;
-
-  let ticking = false;
-
-  function update() {
-    lines.forEach((line) => {
-      const parent = line.parentElement;
-      const rect = parent.getBoundingClientRect();
-      const viewH = window.innerHeight;
-      const progress = Math.min(
-        1,
-        Math.max(0, (viewH * 0.8 - rect.top) / (rect.height + viewH * 0.3))
-      );
-      line.style.setProperty('--growth', progress.toFixed(3));
+    done = true;
+    if (fill) fill.style.width = '100%';
+    steps.forEach((step, i) => {
+      setTimeout(() => step.classList.add('is-active'), 300 + i * 450);
     });
-    ticking = false;
+    window.removeEventListener('scroll', activate);
   }
 
-  window.addEventListener(
-    'scroll',
-    () => {
-      if (!ticking) {
-        ticking = true;
-        requestAnimationFrame(update);
-      }
-    },
-    { passive: true }
-  );
-
-  update();
+  window.addEventListener('scroll', activate, { passive: true });
+  activate();
 }
 
 document.addEventListener('DOMContentLoaded', () => {
@@ -98,5 +66,4 @@ document.addEventListener('DOMContentLoaded', () => {
 
   initReveals();
   initProcess();
-  initGrowthLines();
 });

@@ -259,13 +259,17 @@
   margin-bottom: var(--space-sm);
 }
 
-.process-steps {
+.process-wrap {
   position: relative;
+  margin-top: var(--space-xl);
+}
+
+.process-steps {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: var(--space-xl);
-  margin-top: var(--space-xl);
   list-style: none;
+  margin: 0;
   padding: 0;
 }
 

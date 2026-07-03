@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pagina niet gevonden — Jacob Arie</title>
+  <meta name="robots" content="noindex">
+  <link rel="icon" type="image/svg+xml" href="/assets/icons/favicon.svg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Sora:wght@600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/css/tokens.css">
+  <link rel="stylesheet" href="/css/base.css">
+  <link rel="stylesheet" href="/css/components.css">
+  <style>
+    .error-page {
+      min-height: 70vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      padding: var(--space-xl) var(--space-md);
+    }
+
+    .error-code {
+      font-family: var(--font-heading);
+      font-size: clamp(5rem, 18vw, 9rem);
+      font-weight: 700;
+      line-height: 1;
+      color: var(--color-mint);
+      -webkit-text-stroke: 2px var(--color-primary-dark);
+    }
+
+    .error-page h1 {
+      font-size: var(--text-md);
+      margin-top: var(--space-md);
+    }
+
+    .error-page p {
+      margin-top: var(--space-sm);
+      max-width: 42ch;
+      color: var(--color-text-muted);
+    }
+
+    .error-page .btn {
+      margin-top: var(--space-lg);
+    }
+  </style>
+</head>
+<body>
+  <main id="main">
+    <div class="error-page">
+      <span class="error-code" aria-hidden="true">404</span>
+      <h1>Deze pagina is niet gevonden</h1>
+      <p>De pagina die je zoekt bestaat niet (meer), of er zit een typfout in het adres. Geen zorgen — via de homepagina vind je alles terug.</p>
+      <a class="btn btn-primary" href="/">Naar de homepagina</a>
+    </div>
+  </main>
+</body>
+</html>
