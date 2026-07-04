@@ -57,11 +57,6 @@
     animation: marquee 30s linear infinite;
   }
 
-  .skills-strip:hover .skills-track,
-  .skills-strip:focus-within .skills-track {
-    animation-play-state: paused;
-  }
-
   @keyframes marquee {
     from {
       transform: translateX(0);
@@ -69,22 +64,6 @@
 
     to {
       transform: translateX(-50%);
-    }
-  }
-
-  /* Pulserende dot in de hero-badge */
-  .hero-badge .badge-dot {
-    animation: pulse 2s ease-in-out infinite;
-  }
-
-  @keyframes pulse {
-    0%,
-    100% {
-      box-shadow: 0 0 0 0 rgba(34, 197, 94, 0.5);
-    }
-
-    50% {
-      box-shadow: 0 0 0 6px rgba(34, 197, 94, 0);
     }
   }
 

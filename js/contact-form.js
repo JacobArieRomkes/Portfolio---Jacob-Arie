@@ -76,7 +76,7 @@ function initContactForm() {
       }
     } catch {
       status.className = 'form-status is-error';
-      status.textContent = 'Er ging iets mis bij het versturen. Probeer het later opnieuw of mail me direct.';
+      status.textContent = 'Er ging iets mis bij het versturen. Probeer het later opnieuw of stuur me een bericht via LinkedIn.';
     } finally {
       submitBtn.disabled = false;
     }

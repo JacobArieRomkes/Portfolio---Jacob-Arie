@@ -42,25 +42,6 @@
   gap: var(--space-xl);
 }
 
-.hero-badge {
-  display: inline-flex;
-  align-items: center;
-  gap: var(--space-sm);
-  margin-bottom: var(--space-lg);
-  padding: 6px 14px;
-  font-size: var(--label-sm);
-  font-weight: 600;
-  color: var(--color-primary-dark);
-  background-color: var(--color-mint);
-  border-radius: var(--radius-full);
-}
-
-.hero-badge .badge-dot {
-  width: 8px;
-  height: 8px;
-  border-radius: var(--radius-full);
-  background-color: var(--color-primary);
-}
 
 .hero-accent {
   color: var(--color-primary-deep);
@@ -216,10 +197,15 @@
 }
 
 .projects-more {
-  margin-top: var(--space-xl);
-  text-align: center;
-  color: var(--color-text-muted);
+  display: block;
+  width: fit-content;
+  margin: var(--space-xl) auto 0;
+  padding: var(--space-sm) var(--space-lg);
+  color: var(--color-accent-dark);
+  background-color: var(--color-cream);
+  border-radius: var(--radius-full);
   font-size: var(--label-sm);
+  font-weight: 500;
 }
 
 /* Skills-strip (Home) --------------------------------------------------- */
@@ -483,14 +469,14 @@
 .case-goal {
   margin-top: var(--space-lg);
   padding: var(--space-lg);
-  background-color: var(--color-tint);
-  border-left: 3px solid var(--color-primary);
+  background-color: var(--color-cream);
+  border-left: 3px solid var(--color-accent);
   border-radius: var(--radius-md);
   color: var(--color-text);
 }
 
 .case-goal strong {
-  color: var(--color-primary-dark);
+  color: var(--color-accent-dark);
 }
 
 /* Aanpak: 3 methode-kaartjes */
@@ -589,6 +575,7 @@
 .case-result {
   background-color: var(--color-cream);
   padding-block: var(--section-gap);
+  margin-bottom: var(--section-gap);
   text-align: center;
 }
 
@@ -743,7 +730,7 @@
 
 /* Studievoortgang */
 .study {
-  background-color: var(--color-tint);
+  background-color: var(--color-cream);
   border-radius: var(--radius-xl);
   padding: var(--space-xl) var(--space-lg);
   text-align: center;
@@ -885,8 +872,8 @@
   width: 44px;
   height: 44px;
   flex-shrink: 0;
-  color: var(--color-primary-dark);
-  background-color: var(--color-mint);
+  color: var(--color-accent-dark);
+  background-color: var(--color-cream);
   border-radius: var(--radius-full);
 }
 
