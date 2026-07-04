@@ -21,11 +21,6 @@
   --color-error: #ba1a1a;
   --color-error-bg: #ffdad6;
 
-  /* Warm accent: spaarzaam gebruiken voor decoratie en variatie */
-  --color-accent: #f59e0b;
-  --color-accent-dark: #b45309;
-  --color-cream: #fff7ed;
-
   /* Typography */
   --font-heading: 'Sora', sans-serif;
   --font-body: 'Inter', sans-serif;

@@ -30,7 +30,7 @@
   width: 320px;
   height: 320px;
   border-radius: var(--radius-full);
-  background: radial-gradient(circle, var(--color-cream) 0%, transparent 68%);
+  background: radial-gradient(circle, var(--color-tint) 0%, transparent 68%);
 }
 
 .hero .container {
@@ -237,11 +237,6 @@
   padding: var(--space-sm) var(--space-md);
 }
 
-/* Afwisselende kleuren voor wat variatie in de strip */
-.skills-set .chip:nth-child(even) {
-  background-color: var(--color-cream);
-  color: var(--color-accent-dark);
-}
 
 /* About-teaser (Home) ----------------------------------------------------- */
 
