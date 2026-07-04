@@ -7,14 +7,59 @@
 .hero {
   position: relative;
   overflow: hidden;
-  padding-block: var(--section-gap);
+  padding-block: 72px 56px;
+}
+
+/* Zachte kleurvlekken achter de hero voor wat leven */
+.hero::before {
+  content: '';
+  position: absolute;
+  top: -140px;
+  right: -120px;
+  width: 460px;
+  height: 460px;
+  border-radius: var(--radius-full);
+  background: radial-gradient(circle, var(--color-mint) 0%, transparent 68%);
+}
+
+.hero::after {
+  content: '';
+  position: absolute;
+  bottom: -100px;
+  left: -80px;
+  width: 320px;
+  height: 320px;
+  border-radius: var(--radius-full);
+  background: radial-gradient(circle, var(--color-cream) 0%, transparent 68%);
 }
 
 .hero .container {
+  position: relative;
+  z-index: 1;
   display: grid;
   grid-template-columns: minmax(0, 7fr) minmax(0, 5fr);
   align-items: center;
   gap: var(--space-xl);
+}
+
+.hero-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--space-sm);
+  margin-bottom: var(--space-lg);
+  padding: 6px 14px;
+  font-size: var(--label-sm);
+  font-weight: 600;
+  color: var(--color-primary-dark);
+  background-color: var(--color-mint);
+  border-radius: var(--radius-full);
+}
+
+.hero-badge .badge-dot {
+  width: 8px;
+  height: 8px;
+  border-radius: var(--radius-full);
+  background-color: var(--color-primary);
 }
 
 .hero-accent {
@@ -180,10 +225,12 @@
 /* Skills-strip (Home) --------------------------------------------------- */
 
 .skills-strip {
+  margin-block: var(--space-xl) var(--section-gap);
   padding-block: var(--space-lg);
   border-block: 1px solid var(--color-border);
   background-color: var(--color-surface);
   overflow: hidden;
+  transform: rotate(-1.2deg) scale(1.02);
 }
 
 .skills-track {
@@ -197,10 +244,16 @@
   padding: var(--space-sm) var(--space-md);
 }
 
+/* Afwisselende kleuren voor wat variatie in de strip */
+.skills-track .chip:nth-child(even) {
+  background-color: var(--color-cream);
+  color: var(--color-accent-dark);
+}
+
 /* About-teaser (Home) ----------------------------------------------------- */
 
 .about-teaser {
-  background-color: var(--color-tint);
+  background-color: var(--color-cream);
 }
 
 .about-teaser .container {
@@ -534,7 +587,7 @@
 
 /* Eindresultaat */
 .case-result {
-  background-color: var(--color-tint);
+  background-color: var(--color-cream);
   padding-block: var(--section-gap);
   text-align: center;
 }

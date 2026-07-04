@@ -23,6 +23,7 @@ html {
 }
 
 body {
+  overflow-x: clip;
   font-family: var(--font-body);
   font-size: var(--body-md);
   line-height: 1.6;
