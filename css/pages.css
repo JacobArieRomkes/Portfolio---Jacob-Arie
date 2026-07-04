@@ -201,8 +201,8 @@
   width: fit-content;
   margin: var(--space-xl) auto 0;
   padding: var(--space-sm) var(--space-lg);
-  color: var(--color-accent-dark);
-  background-color: var(--color-cream);
+  color: var(--color-primary-dark);
+  background-color: var(--color-mint);
   border-radius: var(--radius-full);
   font-size: var(--label-sm);
   font-weight: 500;
@@ -221,8 +221,15 @@
 
 .skills-track {
   display: flex;
-  gap: var(--space-md);
   width: max-content;
+}
+
+/* Elke set is exact even breed (eigen gap + naadruimte), zodat de
+   marquee-loop naadloos aansluit zonder sprong. */
+.skills-set {
+  display: flex;
+  gap: var(--space-md);
+  padding-right: var(--space-md);
 }
 
 .skills-track .chip {
@@ -231,7 +238,7 @@
 }
 
 /* Afwisselende kleuren voor wat variatie in de strip */
-.skills-track .chip:nth-child(even) {
+.skills-set .chip:nth-child(even) {
   background-color: var(--color-cream);
   color: var(--color-accent-dark);
 }
@@ -239,7 +246,7 @@
 /* About-teaser (Home) ----------------------------------------------------- */
 
 .about-teaser {
-  background-color: var(--color-cream);
+  background-color: var(--color-tint);
 }
 
 .about-teaser .container {
@@ -469,14 +476,14 @@
 .case-goal {
   margin-top: var(--space-lg);
   padding: var(--space-lg);
-  background-color: var(--color-cream);
-  border-left: 3px solid var(--color-accent);
+  background-color: var(--color-tint);
+  border-left: 3px solid var(--color-primary);
   border-radius: var(--radius-md);
   color: var(--color-text);
 }
 
 .case-goal strong {
-  color: var(--color-accent-dark);
+  color: var(--color-primary-dark);
 }
 
 /* Aanpak: 3 methode-kaartjes */
@@ -573,7 +580,7 @@
 
 /* Eindresultaat */
 .case-result {
-  background-color: var(--color-cream);
+  background-color: var(--color-tint);
   padding-block: var(--section-gap);
   margin-bottom: var(--section-gap);
   text-align: center;
@@ -730,7 +737,7 @@
 
 /* Studievoortgang */
 .study {
-  background-color: var(--color-cream);
+  background-color: var(--color-tint);
   border-radius: var(--radius-xl);
   padding: var(--space-xl) var(--space-lg);
   text-align: center;
@@ -872,8 +879,8 @@
   width: 44px;
   height: 44px;
   flex-shrink: 0;
-  color: var(--color-accent-dark);
-  background-color: var(--color-cream);
+  color: var(--color-primary-dark);
+  background-color: var(--color-mint);
   border-radius: var(--radius-full);
 }
 
