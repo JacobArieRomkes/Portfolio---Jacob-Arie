@@ -197,15 +197,10 @@
 }
 
 .projects-more {
-  display: block;
-  width: fit-content;
-  margin: var(--space-xl) auto 0;
-  padding: var(--space-sm) var(--space-lg);
-  color: var(--color-primary-dark);
-  background-color: var(--color-mint);
-  border-radius: var(--radius-full);
+  margin-top: var(--space-xl);
+  text-align: center;
+  color: var(--color-text-muted);
   font-size: var(--label-sm);
-  font-weight: 500;
 }
 
 /* Skills-strip (Home) --------------------------------------------------- */

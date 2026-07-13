@@ -14,6 +14,7 @@
 
 html {
   -webkit-text-size-adjust: 100%;
+  color-scheme: light;
 }
 
 @media (prefers-reduced-motion: no-preference) {
@@ -133,6 +134,14 @@ a {
   .section {
     padding-block: 56px;
   }
+}
+
+.section-tight {
+  padding-top: 0;
+}
+
+.mt-xl {
+  margin-top: var(--space-xl);
 }
 
 /* Toegankelijkheid --------------------------------------------------------- */
