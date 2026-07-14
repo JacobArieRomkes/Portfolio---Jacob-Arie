@@ -14,8 +14,10 @@ Hogeschool Windesheim (Zwolle). Puur HTML/CSS/JS, geen build-stap.
 ├── css/                    tokens → base → components → pages → animations
 ├── js/                     nav, scroll-animaties, contactformulier
 ├── assets/                 afbeeldingen en iconen
-└── DESIGN.MD               design-richtlijnen (bron van alle tokens)
+└── docs/                   design-richtlijnen (DESIGN.md), spec en plan
 ```
+
+De pagina's en `404.html` staan bewust in de root: hosting verwacht ze daar.
 
 ## Lokaal bekijken
 
