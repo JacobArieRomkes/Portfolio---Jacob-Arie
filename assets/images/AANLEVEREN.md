@@ -9,11 +9,11 @@ in de HTML aan). Aanbevolen formaten hieronder.
 | `portret-hero.svg` | Home — hero | 800×800, vierkant, gezicht gecentreerd (wordt rond bijgesneden) |
 | `portret-teaser.svg` | Home — "Gedreven door nieuwsgierigheid" | 600×600, vierkant |
 | `portret-overmij.svg` | Over mij — bio-kaart | 700×700, vierkant |
-| `project-1-thumb.svg` | Home + Projecten + case-header Campus | 1200×640, liggend |
+| `project-1-thumb.svg` | Home + Projecten + case-header Campus | 1200×640, liggend. Tip: een uitsnede van 2-3 hi-fi schermen van de Campus Navigation Companion |
 | `project-2-thumb.svg` | Home + Projecten + case-header CO₂ | 1200×640, liggend |
 | `project-3-thumb.svg` | Home + Projecten + case-header Zorg | 1200×640, liggend |
-| `projecten/campus/wireframes.svg` | Case Campus — keuzes & wireframes | 900×700 |
-| `projecten/campus/resultaat.svg` | Case Campus — eindresultaat | 1200×620 |
+| `projecten/campus/wireframes.svg` | Case Campus — keuzes & wireframes | 900×700. Export van het low-fi wireframe-bord uit Figma |
+| `projecten/campus/resultaat.svg` | Case Campus — eindresultaat | 1200×620. Export van het hi-fi schermenoverzicht uit Figma |
 | `projecten/co2/wireframes.svg` | Case CO₂ — keuzes & wireframes | 900×700 |
 | `projecten/co2/resultaat.svg` | Case CO₂ — eindresultaat | 1200×620 |
 | `projecten/zorg/wireframes.svg` | Case Zorg — keuzes & wireframes | 900×700 |
