@@ -604,6 +604,23 @@
   color: var(--color-primary-dark);
 }
 
+/* Beeld met bijschrift binnen een case */
+.case-figure {
+  margin: var(--space-xl) 0 0;
+}
+
+.case-figure img {
+  width: 100%;
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-1);
+}
+
+.case-figure figcaption {
+  margin-top: var(--space-md);
+  font-size: var(--label-sm);
+  color: var(--color-text-muted);
+}
+
 /* Eindresultaat */
 .case-result {
   background-color: var(--color-tint);
