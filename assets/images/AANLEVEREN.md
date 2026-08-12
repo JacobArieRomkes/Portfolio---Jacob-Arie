@@ -8,8 +8,16 @@
 | `portret-overmij.jpg` (900×900) | Over mij, bio-kaart | zelfde foto, ruimere uitsnede |
 | `portret-teaser.jpg` (600×600) | Home, "Gedreven door nieuwsgierigheid" | echte foto in de bergen |
 | `project-1-thumb.jpg` (2400×1280) | Home, Projecten, case-header Campus | Figma-export, samengestelde collage |
-| `projecten/campus/wireframes.png` (1800×1328) | Case Campus, wireframes | Figma-export low-fi bord |
-| `projecten/campus/resultaat.jpg` (2400×1240) | Case Campus, eindresultaat | Figma-export, samengestelde collage |
+| `projecten/campus/wireframes.jpg` (1940×1468) | Case Campus, wireframes | Figma-export low-fi bord |
+| `projecten/campus/toegankelijkheid.jpg` (2000×1280) | Case Campus, ontwerpkeuzes | Figma-export, samengestelde collage |
+| `projecten/campus/ontwerpsysteem-typografie.png` (1414×1320) | Case Campus, ontwerpsysteem | uitsnede ontwerpsysteem-bord |
+| `projecten/campus/ontwerpsysteem-kleuren.png` (1411×1250) | Case Campus, ontwerpsysteem | uitsnede ontwerpsysteem-bord |
+| `projecten/campus/dialogen.jpg` (2400×1280) | Case Campus, testen &amp; iteraties | Figma-export, samengestelde collage |
+| `projecten/campus/resultaat.jpg` (2600×1280) | Case Campus, eindresultaat | Figma-export, samengestelde collage |
+
+De campus-collages zijn opgebouwd met één gedeelde stijl: alle schermen even
+hoog, op één lijn, gelijke tussenruimtes, mint-verloop als achtergrond en
+dezelfde ronding en schaduw. Houd die stijl aan als je er beelden bij maakt.
 
 ## Nog placeholder
 

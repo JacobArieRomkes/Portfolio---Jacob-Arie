@@ -615,6 +615,17 @@
   box-shadow: var(--shadow-1);
 }
 
+/* Detailrijke beelden (tabellen) kun je op ware grootte openen */
+.case-figure .zoom {
+  display: block;
+  border-radius: var(--radius-lg);
+  transition: box-shadow 200ms ease;
+}
+
+.case-figure .zoom:hover img {
+  box-shadow: var(--shadow-2);
+}
+
 .case-figure figcaption {
   margin-top: var(--space-md);
   font-size: var(--label-sm);
