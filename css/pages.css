@@ -365,18 +365,28 @@
   color: var(--color-on-forest-muted);
 }
 
-/* Donkere sectie: bosgroen vlak voor ritme tussen licht en donker */
-.section-dark {
+/* Donkere kaart: bosgroen vlak binnen de pagina, met ronde hoeken zodat er
+   geen harde overgang van rand tot rand ontstaat */
+.panel-dark {
+  padding: 64px var(--space-xl);
   background-color: var(--color-forest);
   color: var(--color-on-forest);
+  border-radius: var(--radius-xl);
+  box-shadow: var(--shadow-2);
 }
 
-.section-dark .overline {
+.panel-dark .overline {
   color: var(--color-primary-on-dark);
 }
 
-.section-dark :focus-visible {
+.panel-dark :focus-visible {
   outline-color: var(--color-primary-on-dark);
+}
+
+@media (max-width: 639px) {
+  .panel-dark {
+    padding: 48px var(--space-lg);
+  }
 }
 
 @media (max-width: 767px) {

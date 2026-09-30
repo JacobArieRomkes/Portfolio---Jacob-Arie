@@ -18,23 +18,25 @@
   --color-primary-on-dark: #4ae176;/* fel groen op donkere vlakken (inverse-primary) */
   --color-mint: #dcfce7;           /* alleen nog voor succesmeldingen en hero-gloed */
 
-  --color-sage: #486554;           /* secondary */
-  --color-sage-ink: #314d3e;       /* tekst op saliegroen vlak */
-  --color-sage-soft: #e3ece5;      /* chips, icoontegels */
-  --color-stone: #eef2ee;          /* sectievlakken (tertiary) */
+  /* Verzadiging bewust in het midden: frisser dan grijsgroen,
+     rustiger dan het felle mint */
+  --color-sage: #2f7a50;           /* iconen, overlines */
+  --color-sage-ink: #1d5a3a;       /* tekst op saliegroen vlak */
+  --color-sage-soft: #daf1e2;      /* chips, icoontegels */
+  --color-stone: #eaf5ee;          /* rustige sectievlakken */
 
-  --color-forest: #1c3026;         /* donkere secties en footer */
-  --color-forest-raised: #26402f;  /* elementen op donker */
-  --color-on-forest: #eef4f0;      /* tekst op donker */
-  --color-on-forest-muted: #a7bbad;/* secundaire tekst op donker */
+  --color-forest: #163b29;         /* donkere kaart */
+  --color-forest-raised: #1f4d36;  /* elementen op donker */
+  --color-on-forest: #eef7f1;      /* tekst op donker */
+  --color-on-forest-muted: #b3d1bd;/* secundaire tekst op donker */
 
   /* Neutralen met een groene ondertoon, zodat alles bij elkaar hoort */
   --color-text: #17221c;
-  --color-text-muted: #4f5b54;
-  --color-bg: #f7f9f7;
+  --color-text-muted: #475a4e;
+  --color-bg: #f6faf7;
   --color-surface: #ffffff;
-  --color-border: #e1e7e2;
-  --color-input-bg: #f2f5f2;
+  --color-border: #dde9e1;
+  --color-input-bg: #f1f6f2;
   --color-error: #ba1a1a;
   --color-error-bg: #ffdad6;
 

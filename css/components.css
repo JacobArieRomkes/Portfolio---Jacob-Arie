@@ -176,24 +176,10 @@
 /* Footer ------------------------------------------------------------------ */
 
 .site-footer {
-  margin-top: var(--section-gap);
+  /* geen eigen marge: elke pagina eindigt al met sectie-padding */
   padding-block: var(--space-xl);
-  background-color: var(--color-forest);
-  color: var(--color-on-forest);
-}
-
-.site-footer .site-logo {
-  color: var(--color-on-forest);
-}
-
-.site-footer .logo-dot {
-  color: var(--color-primary-on-dark);
-}
-
-/* Eindigt de pagina met een donkere sectie, dan sluit de footer er direct op aan */
-main:has(> .section-dark:last-child) + .site-footer {
-  margin-top: 0;
-  border-top: 1px solid rgba(255, 255, 255, 0.08);
+  background-color: var(--color-stone);
+  border-top: 1px solid var(--color-border);
 }
 
 .footer-simple {
@@ -207,7 +193,7 @@ main:has(> .section-dark:last-child) + .site-footer {
 .footer-copy {
   margin-top: var(--space-xs);
   font-size: var(--label-sm);
-  color: var(--color-on-forest-muted);
+  color: var(--color-text-muted);
 }
 
 .footer-socials {
@@ -224,14 +210,14 @@ main:has(> .section-dark:last-child) + .site-footer {
   justify-content: center;
   width: 44px;
   height: 44px;
-  color: var(--color-on-forest-muted);
+  color: var(--color-text-muted);
   border-radius: var(--radius-full);
   transition: color 150ms ease, background-color 150ms ease;
 }
 
 .footer-socials a:hover {
-  color: var(--color-primary-on-dark);
-  background-color: var(--color-forest-raised);
+  color: var(--color-sage-ink);
+  background-color: var(--color-sage-soft);
 }
 
 .footer-socials svg {
