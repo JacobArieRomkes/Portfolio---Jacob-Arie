@@ -105,11 +105,11 @@ a {
   font-weight: 600;
   letter-spacing: 0.05em;
   text-transform: uppercase;
-  color: var(--color-primary-dark);
+  color: var(--color-sage);
 }
 
 ::selection {
-  background-color: var(--color-mint);
+  background-color: var(--color-sage-soft);
 }
 
 /* Layout ------------------------------------------------------------------ */

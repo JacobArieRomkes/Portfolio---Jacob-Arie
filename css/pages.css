@@ -30,7 +30,7 @@
   width: 320px;
   height: 320px;
   border-radius: var(--radius-full);
-  background: radial-gradient(circle, var(--color-tint) 0%, transparent 68%);
+  background: radial-gradient(circle, var(--color-stone) 0%, transparent 68%);
 }
 
 .hero .container {
@@ -82,9 +82,9 @@
   content: '';
   position: absolute;
   inset: -14px;
-  border: 2px dashed var(--color-primary);
+  border: 2px dashed var(--color-sage);
   border-radius: var(--radius-full);
-  opacity: 0.5;
+  opacity: 0.35;
 }
 
 .hero-portrait::after {
@@ -94,7 +94,7 @@
   bottom: 8px;
   width: 88px;
   height: 88px;
-  background-color: var(--color-mint);
+  background-color: var(--color-sage-soft);
   border-radius: var(--radius-full);
   z-index: 0;
 }
@@ -236,7 +236,7 @@
 /* About-teaser (Home) ----------------------------------------------------- */
 
 .about-teaser {
-  background-color: var(--color-tint);
+  background-color: var(--color-stone);
 }
 
 .about-teaser .container {
@@ -325,11 +325,10 @@
   height: 56px;
   font-family: var(--font-heading);
   font-weight: 700;
-  color: var(--color-primary-dark);
-  background-color: var(--color-surface);
+  color: var(--color-on-forest);
+  background-color: var(--color-forest-raised);
   border: 2px solid var(--color-primary);
   border-radius: var(--radius-full);
-  box-shadow: var(--shadow-1);
   transition: background-color 300ms ease, color 300ms ease;
 }
 
@@ -345,7 +344,7 @@
   left: calc(16.67% + 40px);
   right: calc(16.67% + 40px);
   height: 2px;
-  background-color: var(--color-mint);
+  background-color: rgba(255, 255, 255, 0.14);
 }
 
 .process-connector .connector-fill {
@@ -363,7 +362,21 @@
 .process-step p {
   max-width: 32ch;
   font-size: var(--label-sm);
-  color: var(--color-text-muted);
+  color: var(--color-on-forest-muted);
+}
+
+/* Donkere sectie: bosgroen vlak voor ritme tussen licht en donker */
+.section-dark {
+  background-color: var(--color-forest);
+  color: var(--color-on-forest);
+}
+
+.section-dark .overline {
+  color: var(--color-primary-on-dark);
+}
+
+.section-dark :focus-visible {
+  outline-color: var(--color-primary-on-dark);
 }
 
 @media (max-width: 767px) {
@@ -466,7 +479,7 @@
 .case-goal {
   margin-top: var(--space-lg);
   padding: var(--space-lg);
-  background-color: var(--color-tint);
+  background-color: var(--color-stone);
   border-left: 3px solid var(--color-primary);
   border-radius: var(--radius-md);
   color: var(--color-text);
@@ -505,8 +518,8 @@
   width: 44px;
   height: 44px;
   margin-bottom: var(--space-md);
-  color: var(--color-primary-dark);
-  background-color: var(--color-mint);
+  color: var(--color-sage);
+  background-color: var(--color-sage-soft);
   border-radius: var(--radius-md);
 }
 
@@ -564,8 +577,8 @@
   width: 28px;
   height: 28px;
   font-weight: 700;
-  color: var(--color-primary-dark);
-  background-color: var(--color-mint);
+  color: var(--color-sage);
+  background-color: var(--color-sage-soft);
   border-radius: var(--radius-full);
 }
 
@@ -634,7 +647,7 @@
 
 /* Eindresultaat */
 .case-result {
-  background-color: var(--color-tint);
+  background-color: var(--color-stone);
   padding-block: var(--section-gap);
   margin-bottom: var(--section-gap);
   text-align: center;
@@ -779,8 +792,8 @@
   width: 44px;
   height: 44px;
   margin-bottom: var(--space-md);
-  color: var(--color-primary-dark);
-  background-color: var(--color-mint);
+  color: var(--color-sage);
+  background-color: var(--color-sage-soft);
   border-radius: var(--radius-md);
 }
 
@@ -791,7 +804,7 @@
 
 /* Studievoortgang */
 .study {
-  background-color: var(--color-tint);
+  background-color: var(--color-stone);
   border-radius: var(--radius-xl);
   padding: var(--space-xl) var(--space-lg);
   text-align: center;
@@ -933,8 +946,8 @@
   width: 44px;
   height: 44px;
   flex-shrink: 0;
-  color: var(--color-primary-dark);
-  background-color: var(--color-mint);
+  color: var(--color-sage);
+  background-color: var(--color-sage-soft);
   border-radius: var(--radius-full);
 }
 

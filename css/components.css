@@ -152,7 +152,7 @@
   }
 
   .site-nav a:not(.btn):hover {
-    background-color: var(--color-tint);
+    background-color: var(--color-stone);
   }
 
   .site-nav a[aria-current='page']::after {
@@ -178,8 +178,22 @@
 .site-footer {
   margin-top: var(--section-gap);
   padding-block: var(--space-xl);
-  background-color: var(--color-surface);
-  border-top: 1px solid var(--color-border);
+  background-color: var(--color-forest);
+  color: var(--color-on-forest);
+}
+
+.site-footer .site-logo {
+  color: var(--color-on-forest);
+}
+
+.site-footer .logo-dot {
+  color: var(--color-primary-on-dark);
+}
+
+/* Eindigt de pagina met een donkere sectie, dan sluit de footer er direct op aan */
+main:has(> .section-dark:last-child) + .site-footer {
+  margin-top: 0;
+  border-top: 1px solid rgba(255, 255, 255, 0.08);
 }
 
 .footer-simple {
@@ -193,7 +207,7 @@
 .footer-copy {
   margin-top: var(--space-xs);
   font-size: var(--label-sm);
-  color: var(--color-text-muted);
+  color: var(--color-on-forest-muted);
 }
 
 .footer-socials {
@@ -210,14 +224,14 @@
   justify-content: center;
   width: 44px;
   height: 44px;
-  color: var(--color-text-muted);
+  color: var(--color-on-forest-muted);
   border-radius: var(--radius-full);
   transition: color 150ms ease, background-color 150ms ease;
 }
 
 .footer-socials a:hover {
-  color: var(--color-primary-dark);
-  background-color: var(--color-mint);
+  color: var(--color-primary-on-dark);
+  background-color: var(--color-forest-raised);
 }
 
 .footer-socials svg {
@@ -265,7 +279,7 @@
 }
 
 .btn-outline:hover {
-  background-color: var(--color-tint);
+  background-color: var(--color-stone);
 }
 
 .btn-ghost {
@@ -315,8 +329,8 @@
   font-size: 0.8125rem;
   font-weight: 600;
   line-height: 1.4;
-  color: var(--color-primary-dark);
-  background-color: var(--color-mint);
+  color: var(--color-sage-ink);
+  background-color: var(--color-sage-soft);
   border-radius: var(--radius-full);
   white-space: nowrap;
 }
