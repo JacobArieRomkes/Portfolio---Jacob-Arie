@@ -325,9 +325,10 @@
   height: 56px;
   font-family: var(--font-heading);
   font-weight: 700;
-  color: var(--color-on-forest);
-  background-color: var(--color-forest-raised);
+  color: var(--color-primary-dark);
+  background-color: var(--color-surface);
   border: 2px solid var(--color-primary);
+  box-shadow: var(--shadow-1);
   border-radius: var(--radius-full);
   transition: background-color 300ms ease, color 300ms ease;
 }
@@ -344,7 +345,7 @@
   left: calc(16.67% + 40px);
   right: calc(16.67% + 40px);
   height: 2px;
-  background-color: rgba(255, 255, 255, 0.14);
+  background-color: rgba(47, 122, 80, 0.2);
 }
 
 .process-connector .connector-fill {
@@ -362,29 +363,23 @@
 .process-step p {
   max-width: 32ch;
   font-size: var(--label-sm);
-  color: var(--color-on-forest-muted);
+  color: var(--color-text-muted);
 }
 
-/* Donkere kaart: bosgroen vlak binnen de pagina, met ronde hoeken zodat er
-   geen harde overgang van rand tot rand ontstaat */
-.panel-dark {
+/* Uitgelichte kaart: zelfde behandeling als de studievoortgang, zodat
+   alle uitgelichte blokken op de site één familie vormen */
+.panel-tint {
   padding: 64px var(--space-xl);
-  background-color: var(--color-forest);
-  color: var(--color-on-forest);
+  background: var(--gradient-panel);
   border-radius: var(--radius-xl);
-  box-shadow: var(--shadow-2);
 }
 
-.panel-dark .overline {
-  color: var(--color-primary-on-dark);
-}
-
-.panel-dark :focus-visible {
-  outline-color: var(--color-primary-on-dark);
+.panel-tint .overline {
+  color: var(--color-sage-ink);
 }
 
 @media (max-width: 639px) {
-  .panel-dark {
+  .panel-tint {
     padding: 48px var(--space-lg);
   }
 }
@@ -814,7 +809,7 @@
 
 /* Studievoortgang */
 .study {
-  background-color: var(--color-stone);
+  background: var(--gradient-panel);
   border-radius: var(--radius-xl);
   padding: var(--space-xl) var(--space-lg);
   text-align: center;

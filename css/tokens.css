@@ -9,13 +9,12 @@
      - primary (fel groen): alleen acties, focus, actieve staat, voortgang
      - sage (secundair):    chips, icoontegels, overlines
      - stone (tertiair):    rustige sectievlakken
-     - forest (donker):     donkere band en footer, voor ritme licht/donker */
+     Uitgelichte blokken (proces, studievoortgang) delen één zacht verloop. */
   --color-primary: #22c55e;        /* acties */
   --color-on-primary: #004b1e;     /* tekst op primary (AA-contrast op fel groen) */
   --color-primary-hover: #4ade80;  /* hover-variant die contrast behoudt */
   --color-primary-dark: #166534;   /* links en groene tekst op lichte vlakken (AA) */
   --color-primary-deep: #006e2f;   /* accentwoorden in koppen */
-  --color-primary-on-dark: #4ae176;/* fel groen op donkere vlakken (inverse-primary) */
   --color-mint: #dcfce7;           /* alleen nog voor succesmeldingen en hero-gloed */
 
   /* Verzadiging bewust in het midden: frisser dan grijsgroen,
@@ -25,10 +24,7 @@
   --color-sage-soft: #daf1e2;      /* chips, icoontegels */
   --color-stone: #eaf5ee;          /* rustige sectievlakken */
 
-  --color-forest: #163b29;         /* donkere kaart */
-  --color-forest-raised: #1f4d36;  /* elementen op donker */
-  --color-on-forest: #eef7f1;      /* tekst op donker */
-  --color-on-forest-muted: #b3d1bd;/* secundaire tekst op donker */
+  --gradient-panel: linear-gradient(135deg, var(--color-stone) 0%, var(--color-sage-soft) 100%);
 
   /* Neutralen met een groene ondertoon, zodat alles bij elkaar hoort */
   --color-text: #17221c;
